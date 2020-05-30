@@ -2,9 +2,9 @@
 .nav-link{
     font-size: 0.8rem
 }
+
 /*BODY*/
 body {
-
     background-color : #161618 !important;
 }
 .marketing .col-lg-4 {
@@ -18,6 +18,7 @@ body {
     margin-right: .75rem;
     margin-left: .75rem;
 }
+
 /*FEATURETTES - IMAGE DISPLAY*/
 .featurette-divider {
     margin: 5rem 0;
@@ -38,9 +39,10 @@ body {
 
 @media (min-width: 62em) {
     .featurette-heading {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 }
+
 /*FOOTER*/
 .footericon {
     padding-left: 1em;
