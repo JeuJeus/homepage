@@ -28,7 +28,7 @@ But if you are interested in Code feel free contacting me! -->
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="d-flex justify-content-xl-center">
+    <div class="d-flex justify-content-xl-center offset-sm-1">
         <a class="navbar-brand" href="#">
             <img src="../img/logo.webp" width="66" height="39" alt="">
         </a>
@@ -49,8 +49,13 @@ But if you are interested in Code feel free contacting me! -->
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" style="color:white" href="#">
+                <a class="nav-link" style="color:white" href="#life">
                     Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:white" href="#projects">
+                    Projects
                 </a>
             </li>
         </ul>
@@ -60,14 +65,14 @@ But if you are interested in Code feel free contacting me! -->
 
 <main role="main">
 
-    <div class="container marketing">
+    <div class="container marketing" id="life">
 
         <hr class="featurette-divider">
 
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading text-light">Code. <span
-                        class="text-muted">Craftsmanship and Hacking.</span>
+                <h2 class="featurette-heading text-light">Code.
+                    <span class="text-muted">Craftsmanship and Hacking.</span>
                 </h2>
                 <p class="lead">My fascination for code ranges from team development on large software projects to
                     meticulous tweaking of my Arch installation.<br>
@@ -87,8 +92,8 @@ But if you are interested in Code feel free contacting me! -->
 
         <div class="row featurette">
             <div class="col-md-7 order-md-1">
-                <h2 class="featurette-heading text-light">Electronics. <span
-                        class="text-muted">Making and Tweaking</span>
+                <h2 class="featurette-heading text-light">Electronics.
+                    <span class="text-muted">Making and Tweaking</span>
                 </h2>
                 <p class="lead">I use my fascination for technology to tinker, not only with software, but also with
                     additional hardware.
@@ -109,7 +114,8 @@ But if you are interested in Code feel free contacting me! -->
 
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading text-light">Music. <span class="text-muted">Listening and Mixing.</span>
+                <h2 class="featurette-heading text-light">Music.
+                    <span class="text-muted">Listening and Mixing.</span>
                 </h2>
                 <p class="lead">Music has always been an important part of my life - the soundtrack, so to speak.<br>
                     When I'm DJing I can be creative, as soon as the music starts I'm happy.<br>
@@ -125,7 +131,8 @@ But if you are interested in Code feel free contacting me! -->
 
         <div class="row featurette">
             <div class="col-md-7 order-md-1">
-                <h2 class="featurette-heading text-light">Sports. <span class="text-muted">Bouldering and Biking.</span>
+                <h2 class="featurette-heading text-light">Sports.
+                    <span class="text-muted">Bouldering and Biking.</span>
                 </h2>
                 <p class="lead">In sport I find the ideal, but also necessary, balance to the digital.<br>
                     In bouldering I can challenge myself and constantly progress technically and powerfully, just like I
@@ -144,6 +151,50 @@ But if you are interested in Code feel free contacting me! -->
         <hr class="featurette-divider">
 
     </div>
+
+    <div class="album" id="projects">
+
+        <h2 class="text-light text-center">Projects</h2>
+
+        <hr class="featurette-divider">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card bg-dark mb-4 box-shadow">
+                        <img class="card-img-top" src="../img/arch.webp">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <h5 class="text-light">.dotfiles</h5>
+                            The dotfiles used on my Arch Linux install.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="https://github.com/JeuJeus/.dotfiles" target="_blank" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark mb-4 box-shadow">
+                        <img class="card-img-top" src="../img/digitalerbriefkasten.webp">
+                        <div class="card-body">
+                            <p class="card-text">
+                            <h5 class="text-light">digitaler Briefkasten</h5>
+                            A university project based on Springboot, Thymeleaf and h2.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="https://github.com/JeuJeus/awe1-digitaler-briefkasten" target="_blank" type="button" class="btn btn-sm btn-outline-secondary">Currently under NDA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+    </div>
+
 </main>
 
 <footer class="container-fluid top-buffer text-center bg-dark">
@@ -178,8 +229,14 @@ But if you are interested in Code feel free contacting me! -->
             </p>
         </div>
 
-        <div class="col-sm justify-content-center">
-            <a href="/Impressum.html">Impressum</a>
+        <div class="col-sm text-center justify-content-center">
+            <p>
+                <button class="btn btn-circle btn-dark ml-3 mt-2" onclick="window.scrollTo(0,0);">
+                    <i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+            </p>
+            <p>
+                <a href="/Impressum.html">Impressum</a>
+            </p>
         </div>
 
     </div>
