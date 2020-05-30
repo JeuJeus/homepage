@@ -1,6 +1,11 @@
 /*NAVBAR*/
 .nav-link{
-    font-size: 0.8rem
+    font-size: 0.8rem;
+}
+
+.navbar.scrolled {
+    background-color: #343A40 !important;
+    transition: background-color 200ms linear;
 }
 
 /*BODY*/
@@ -28,7 +33,6 @@ body {
     font-weight: 300;
     line-height: 1;
     letter-spacing: -.05rem;
-    color : light
 }
 
 @media (min-width: 40em) {
@@ -51,12 +55,9 @@ body {
 
 .top-buffer {
     padding-top: 1em;
+    padding-bottom: 0.5em;
 }
 
-.padding-footer-right {
-    padding-bottom: 1em;
-    padding-right: 1.5em;
-}
 
 
 
