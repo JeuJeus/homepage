@@ -6,7 +6,7 @@
     <meta name="description"
           content="My personal portfolio and projects.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="google-site-verification" content="vQKgLR6fdDOlBHfVlp8BAr5HYuQgTCP8NWkhRaxDxi0" />
+    <meta name="google-site-verification" content="vQKgLR6fdDOlBHfVlp8BAr5HYuQgTCP8NWkhRaxDxi0"/>
     <meta charset="utf-8">
 
     <script src="./src/js/jquery-3.3.1.min.js"></script>
@@ -19,20 +19,21 @@
 </head>
 <!--There are no easter eggs in here.
 But if you are interested in Code feel free contacting me! -->
-<body  class="text-secondary">
+<body class="text-secondary">
 
 <nav class="navbar navbar-dark fixed-top">
 
-    <div class="d-flex justify-content-xl-start">
-        <a class="nav-link" style="color:white" href="/">
-            Home
-        </a>
-    </div>
+    <button class="navbar-toggler justify-content-xl-start" type="button" data-toggle="collapse"
+            data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
     <div class="d-flex justify-content-xl-center">
         <a class="navbar-brand" href="#">
             <img src="../img/logo.webp" width="66" height="39" alt="">
         </a>
     </div>
+
     <div class="d-flex justify-content-xl-end">
         <a class="nav-link" style="color:white" href="https://github.com/JeuJeus" target="_blank">
             <i class="fab fa-github fa-lg"></i>
@@ -44,6 +45,17 @@ But if you are interested in Code feel free contacting me! -->
             <i class="fab fa-youtube fa-lg"></i>
         </a>
     </div>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" style="color:white" href="#">
+                    Home
+                </a>
+            </li>
+        </ul>
+    </div>
+
 </nav>
 
 <main role="main">
@@ -76,7 +88,7 @@ But if you are interested in Code feel free contacting me! -->
         <div class="row featurette">
             <div class="col-md-7 order-md-1">
                 <h2 class="featurette-heading text-light">Electronics. <span
-                class="text-muted">Making and Tweaking</span>
+                        class="text-muted">Making and Tweaking</span>
                 </h2>
                 <p class="lead">I use my fascination for technology to tinker, not only with software, but also with
                     additional hardware.
