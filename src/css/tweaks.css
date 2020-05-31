@@ -9,7 +9,21 @@ html {
     color:white;
 }
 
+.navbar{
+    transition: background-color 200ms linear;
+}
+
 .navbar.scrolled {
+    background-color: #343A40 !important;
+    transition: background-color 200ms linear;
+}
+
+.navbar-nav{
+    background-color: rgba(22, 22, 24, 0.8);
+    transition: background-color 200ms linear;
+}
+
+.navbar-nav.scrolled{
     background-color: #343A40 !important;
     transition: background-color 200ms linear;
 }
@@ -114,8 +128,8 @@ ul.timeline > li:before {
 }
 
 .timeline p {
-    padding-top: 0.3em;
-    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
 }
 
 /*FOOTER*/
