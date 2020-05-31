@@ -1,11 +1,12 @@
 /*GLOBAL*/
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /*NAVBAR*/
-.nav-link{
+.nav-link {
     font-size: 0.8rem;
+    color:white;
 }
 
 .navbar.scrolled {
@@ -17,16 +18,18 @@ html {
 body {
     background-image: url("../../img/blurredbackground.webp");
     background-size: cover;
-    background-color : #161618 !important;
+    background-color: #161618 !important;
 }
 
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
 }
+
 .marketing h2 {
     font-weight: 400;
 }
+
 .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
@@ -44,8 +47,8 @@ body {
 }
 
 .featurette {
-    /*background-color: rgba(52,58,64,0.8);*/
-    background-color: rgba(22,22,24,0.8);
+    background-color: rgba(22, 22, 24, 0.8);
+    box-shadow: 0px 0px 4em 1em rgb(22, 22, 24);
 }
 
 @media (min-width: 40em) {
@@ -61,9 +64,59 @@ body {
 }
 
 /*CARDS*/
+.card-body {
+    background-color: rgba(22, 22, 24, 0.7);
+}
+
 .card {
-    background-color: rgba(22,22,24,0.8);
- }
+    background-color: rgba(22, 22, 24, 0.7);
+}
+
+/*TIMELINE*/
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    background-color: rgba(22, 22, 24, 0.8);
+    box-shadow: 0px 0px 5em 2em rgb(22, 22, 24);
+}
+
+ul.timeline:before {
+    content: ' ';
+    background: #f8f9fa;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline > li {
+    margin: 1.2em 0;
+    padding-left: 1.2em;
+}
+
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 0.2em solid;
+    left: 1.2em;
+    width: 1.2em;
+    height: 1.2em;
+    z-index: 400;
+}
+
+.timeline b {
+    color: #f8f9fa !important;
+}
+
+.timeline p {
+    padding-top: 0.3em;
+    padding-bottom: 0.5em;
+}
 
 /*FOOTER*/
 .footericon {
@@ -77,5 +130,13 @@ body {
 }
 
 
+/*JUMBOTRON / IMPRESSUM*/
+.jumbotron{
+    background-color: #161618;
+    margin-bottom: 0;
+}
 
+.jumbotron h1{
+    margin-top: 1em;
+}
 
