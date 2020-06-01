@@ -28,11 +28,20 @@ html {
     transition: background-color 200ms linear;
 }
 
+a:hover, a.text-light:hover {
+    color: #606870 !important;
+}
+
 /*BODY*/
 body {
     background-image: url("../../img/blurredbackground.webp");
     background-size: cover;
     background-color: #161618 !important;
+}
+
+h2 {
+    background-color: rgba(22, 22, 24, 0.8);
+    box-shadow: 0px 0px 4em 2em rgb(22, 22, 24);
 }
 
 .marketing .col-lg-4 {
@@ -128,7 +137,7 @@ ul.timeline > li:before {
 }
 
 .timeline p {
-    padding-top: 0.5em;
+    padding-top: 1em;
     padding-bottom: 1.5em;
 }
 
