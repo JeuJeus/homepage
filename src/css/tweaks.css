@@ -108,7 +108,7 @@ ul.timeline:before {
     background: #f8f9fa;
     display: inline-block;
     position: absolute;
-    left: 29px;
+    left: 28px;
     width: 2px;
     height: 100%;
     z-index: 400;
