@@ -5,12 +5,13 @@ html {
 
 /*NAVBAR*/
 .nav-link {
-    font-size: 0.8rem;
     color:white;
 }
 
 .navbar{
     transition: background-color 200ms linear;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
 }
 
 .navbar.scrolled {
@@ -30,6 +31,16 @@ html {
 
 a:hover, a.text-light:hover {
     color: #606870 !important;
+}
+
+@media (min-width: 750px) {
+    .navbar-brand
+    {
+        text-align:center !important;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 /*BODY*/
