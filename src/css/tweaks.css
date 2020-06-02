@@ -10,8 +10,8 @@ html {
 
 .navbar{
     transition: background-color 200ms linear;
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
 }
 
 .navbar.scrolled {
