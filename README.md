@@ -8,7 +8,7 @@
 
 ## Link: ![jeujeus.de](https://jeujeus.de)
 
-![image](https://raw.githubusercontent.com/JeuJeus/homepage/master/img/website.webp)
+![image](https://raw.githubusercontent.com/JeuJeus/homepage/master/img/website.png)
 
 ## Built with:
 - Bootstrap 4

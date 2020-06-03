@@ -5,10 +5,10 @@ html {
 
 /*NAVBAR*/
 .nav-link {
-    color:white;
+    color: white;
 }
 
-.navbar{
+.navbar {
     transition: background-color 200ms linear;
     padding: 0.6em 0.5em;
 }
@@ -18,12 +18,12 @@ html {
     transition: background-color 200ms linear;
 }
 
-.navbar-nav{
+.navbar-nav {
     background-color: rgba(22, 22, 24, 0.8);
     transition: background-color 200ms linear;
 }
 
-.navbar-nav.scrolled{
+.navbar-nav.scrolled {
     background-color: #343A40 !important;
     transition: background-color 200ms linear;
 }
@@ -33,9 +33,8 @@ a:hover, a.text-light:hover {
 }
 
 @media (min-width: 750px) {
-    .navbar-brand
-    {
-        text-align:center !important;
+    .navbar-brand {
+        text-align: center !important;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -164,12 +163,12 @@ ul.timeline > li:before {
 
 
 /*JUMBOTRON / IMPRESSUM*/
-.jumbotron{
+.jumbotron {
     background-color: #161618;
     margin-bottom: 0;
 }
 
-.jumbotron h1{
+.jumbotron h1 {
     margin-top: 1em;
 }
 
