@@ -6,7 +6,7 @@
 - One Page Layout
 - No additional Dependencies
 
-## Link: ![Live Demo](https://jeujeus.de)
+## Link: ![jeujeus.de](https://jeujeus.de)
 
 ![image](https://raw.githubusercontent.com/JeuJeus/homepage/master/img/website.webp)
 
