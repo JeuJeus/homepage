@@ -42,7 +42,7 @@ a:hover, a.text-light:hover {
 }
 
 /*BODY*/
-body {
+body .blurredBg {
     background-image: url("../../img/blurredbackground.png");
     background-size: cover;
     background-color: #161618 !important;
@@ -186,5 +186,9 @@ ul.timeline > li:before {
 
 .jumbotron h1 {
     margin-top: 1em;
+}
+
+.impressumBg {
+    background-color: #161618;
 }
 
