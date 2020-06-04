@@ -6,11 +6,10 @@
 - One Page Layout
 - No additional Dependencies
 
-## Link: ![jeujeus.de](https://jeujeus.de)
-
 ## Google Lighthouse Score
 ![Lighthouse](https://raw.githubusercontent.com/JeuJeus/homepage/master/img/score.png)
 
+## Link: ![jeujeus.de](https://jeujeus.de)
 ![image](https://raw.githubusercontent.com/JeuJeus/homepage/master/img/website.png)
 
 ## Built with:
