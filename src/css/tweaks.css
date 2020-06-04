@@ -42,7 +42,7 @@ a:hover, a.text-light:hover {
 }
 
 /*BODY*/
-body .blurredBg {
+body {
     background-image: url("../../img/blurredbackground.png");
     background-size: cover;
     background-color: #161618 !important;
@@ -168,7 +168,7 @@ ul.timeline > li:before {
 }
 
 .top-buffer {
-    padding-top: 0.5em;
+    padding-top: 0.3em;
     padding-bottom: 0.5em;
 }
 
@@ -180,7 +180,8 @@ ul.timeline > li:before {
 
 /*JUMBOTRON / IMPRESSUM*/
 .jumbotron {
-    background-color: #161618;
+    background-color: rgba(22, 22, 24, 0.8);
+    box-shadow: 0px 0px 4em 1em rgb(22, 22, 24);
     margin-bottom: 0;
 }
 
