@@ -7,7 +7,9 @@
 - No additional Dependencies
 
 ## Google Lighthouse Score
-![Lighthouse](https://raw.githubusercontent.com/JeuJeus/homepage/master/img/score.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JeuJeus/homepage/master/img/score.png">
+</p>
 
 ## Link: ![jeujeus.de](https://jeujeus.de)
 ![image](https://raw.githubusercontent.com/JeuJeus/homepage/master/img/website.png)
