@@ -163,8 +163,8 @@ ul.timeline > li:before {
 
 /*FOOTER*/
 .footericon {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .top-buffer {
