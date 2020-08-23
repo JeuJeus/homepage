@@ -10,7 +10,6 @@
 - Modern Design
 - Fully Responsive
 - One Page Layout
-- No additional Dependencies
 
 ## Built with:
 - Bootstrap 4
