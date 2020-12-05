@@ -6,6 +6,7 @@ html {
 /*NAVBAR*/
 .nav-link {
     color: white;
+    padding: .5rem 0.6rem;
 }
 
 .navbar {
