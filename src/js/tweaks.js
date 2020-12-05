@@ -1,9 +1,17 @@
 $(function () {
+    const nav = $('.navbar');
+    const navbarnav = $(".navbar-nav");
+
     $(document).scroll(function () {
-        var $nav = $(".navbar");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > 10);
-        var $navbarnav = $(".navbar-nav");
-        $navbarnav.toggleClass('scrolled', $(this).scrollTop() > 10);
+        nav.toggleClass('scrolled', $(this).scrollTop() > 10);
+        navbarnav.toggleClass('scrolled', $(this).scrollTop() > 10);
+    });
+
+    const burgerMenu = $('.navbar-toggler-icon');
+
+    burgerMenu.click(function () {
+        nav.toggleClass('scrolled', !nav.hasClass('scrolled'));
+        navbarnav.toggleClass('scrolled', !navbarnav.hasClass('scrolled'));
     });
 });
 
