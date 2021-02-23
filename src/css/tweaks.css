@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.whitelink {
+    color: #fff;
+}
+
 /*NAVBAR*/
 .nav-link {
     color: white;
