@@ -1,10 +1,19 @@
+/*VARIABLES*/
+:root {
+    --slightly-transparent-dark-grey: rgba(22, 22, 24, 0.8);
+    --slightly-more-transparent-dark-grey: rgba(22, 22, 24, 0.7);
+    --dark-grey: rgb(22, 22, 24);
+    --somewhat-light-grey: rgb(52, 58, 64);
+    --somewhat-lighter-grey: rgb(96, 104, 112);
+}
+
 /*GLOBAL*/
 html {
     scroll-behavior: smooth;
 }
 
 .whitelink {
-    color: #fff;
+    color: white;
 }
 
 /*NAVBAR*/
@@ -19,22 +28,22 @@ html {
 }
 
 .navbar.scrolled {
-    background-color: #343A40 !important;
+    background-color: var(--somewhat-light-grey) !important;
     transition: background-color 200ms linear;
 }
 
 .navbar-nav {
-    background-color: rgba(22, 22, 24, 0.8);
+    background-color: var(--slightly-transparent-dark-grey);
     transition: background-color 200ms linear;
 }
 
 .navbar-nav.scrolled {
-    background-color: #343A40 !important;
+    background-color: var(--somewhat-light-grey) !important;
     transition: background-color 200ms linear;
 }
 
 a:hover, a.text-light:hover {
-    color: #606870 !important;
+    color: var(--somewhat-lighter-grey) !important;
 }
 
 @media (min-width: 750px) {
@@ -50,12 +59,12 @@ a:hover, a.text-light:hover {
 body {
     background-image: url("../../img/blurredbackground.png");
     background-size: cover;
-    background-color: #161618 !important;
+    background-color: var(--dark-grey) !important;
 }
 
 h2 {
-    background-color: rgba(22, 22, 24, 0.8);
-    box-shadow: 0px 0px 4em 2em rgb(22, 22, 24);
+    background-color: var(--slightly-transparent-dark-grey);
+    box-shadow: 0px 0px 4em 2em var(--dark-grey);
 }
 
 .marketing .col-lg-4 {
@@ -84,8 +93,8 @@ h2 {
 }
 
 .featurette {
-    background-color: rgba(22, 22, 24, 0.8);
-    box-shadow: 0px 0px 4em 1em rgb(22, 22, 24);
+    background-color: var(--slightly-transparent-dark-grey);
+    box-shadow: 0px 0px 4em 1em var(--dark-grey);
 }
 
 @media (min-width: 40em) {
@@ -102,11 +111,11 @@ h2 {
 
 /*CARDS*/
 .card-body {
-    background-color: rgba(22, 22, 24, 0.7);
+    background-color: var(--slightly-more-transparent-dark-grey);
 }
 
 .card {
-    background-color: rgba(22, 22, 24, 0.7);
+    background-color: var(--slightly-more-transparent-dark-grey);
 }
 
 .slightBorder {
@@ -124,13 +133,13 @@ h2 {
 ul.timeline {
     list-style-type: none;
     position: relative;
-    background-color: rgba(22, 22, 24, 0.8);
-    box-shadow: 0px 0px 5em 2em rgb(22, 22, 24);
+    background-color: var(--slightly-transparent-dark-grey);
+    box-shadow: 0px 0px 5em 2em var(--dark-grey);
 }
 
 ul.timeline:before {
     content: ' ';
-    background: #f8f9fa;
+    background: white;
     display: inline-block;
     position: absolute;
     left: 25px;
@@ -158,7 +167,7 @@ ul.timeline > li:before {
 }
 
 .timeline b {
-    color: #f8f9fa !important;
+    color: white !important;
 }
 
 .timeline p {
@@ -185,8 +194,8 @@ ul.timeline > li:before {
 
 /*JUMBOTRON / IMPRESSUM*/
 .jumbotron {
-    background-color: rgba(22, 22, 24, 0.8);
-    box-shadow: 0px 0px 4em 1em rgb(22, 22, 24);
+    background-color: var(--slightly-transparent-dark-grey);
+    box-shadow: 0px 0px 4em 1em var(--dark-grey);
     margin-bottom: 0;
 }
 
