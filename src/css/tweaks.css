@@ -142,7 +142,7 @@ ul.timeline:before {
     background: white;
     display: inline-block;
     position: absolute;
-    left: 25px;
+    left: 1.8em;
     width: 2px;
     height: 100%;
     z-index: 400;
