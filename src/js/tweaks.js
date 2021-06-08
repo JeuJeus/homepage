@@ -1,18 +1,26 @@
-$(function () {
-    const nav = $('.navbar');
-    const navbarnav = $(".navbar-nav");
+document.addEventListener("DOMContentLoaded", () => {
 
-    $(document).scroll(function () {
-        nav.toggleClass('scrolled', $(this).scrollTop() > 10);
-        navbarnav.toggleClass('scrolled', $(this).scrollTop() > 10);
+    const navbar = document.querySelector('.navbar');
+    const navbarNav = document.querySelector('.navbar-nav');
+    const burgerMenu = document.querySelector('.navbar-toggler-icon');
+
+    burgerMenu.addEventListener('click', () => {
+        if (!navbar.classList.contains('scrolled') && !navbarNav.classList.contains('scrolled')) {
+            navbar.classList.toggle('scrolled');
+            navbarNav.classList.toggle('scrolled');
+        }
     });
 
-    const burgerMenu = $('.navbar-toggler-icon');
+    window.onscroll = () => {
+        if (window.scrollY > 300) {
+            navbar.classList.add('scrolled');
+            navbarNav.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+            navbarNav.classList.remove('scrolled');
+        }
+    };
 
-    burgerMenu.click(function () {
-        nav.toggleClass('scrolled', !nav.hasClass('scrolled'));
-        navbarnav.toggleClass('scrolled', !navbarnav.hasClass('scrolled'));
-    });
 });
 
 $('.carousel-sync').carousel('cycle');
