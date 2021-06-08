@@ -21,6 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
+    burgerMenu.click(function () {
+        nav.toggleClass('scrolled', !nav.hasClass('scrolled'));
+        navbarnav.toggleClass('scrolled', !navbarnav.hasClass('scrolled'));
+    });
 });
 
 $('.carousel-sync').carousel('cycle');
