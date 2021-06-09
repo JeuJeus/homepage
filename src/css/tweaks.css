@@ -83,6 +83,7 @@ h2 {
 
 /*FEATURETTES - IMAGE DISPLAY*/
 .featurette-divider {
+    visibility: hidden;
     margin: 4rem 0;
 }
 
