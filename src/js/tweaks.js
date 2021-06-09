@@ -39,26 +39,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    carousels.forEach(c =>
-        c.addEventListener('slid.bs.carousel',()=> carouselsLock.delete(c)));
+    let pauseAllCarouselsOnHover = () => carousels.forEach(c => bootstrap.Carousel.getInstance(c).pause());
+    let cycleAllCarouselsOnHoverLeave = () => carousels.forEach(c => bootstrap.Carousel.getInstance(c).cycle());
 
-    carousels.forEach(c=>
-        c.addEventListener('slide.bs.carousel', (e) => slideAllCarousels(e.direction,c)));
-
-
-    // $('.carousel-sync').carousel('cycle');
-    // $('.carousel-sync').on('click', '.carousel-control[data-slide]', function (ev) {
-    //     ev.preventDefault();
-    //     $('.carousel-sync').carousel($(this).data('slide'));
-    // });
-    // $('.carousel-sync').on('mouseover', function (ev) {
-    //     ev.preventDefault();
-    //     $('.carousel-sync').carousel('pause');
-    // });
-    // $('.carousel-sync').on('mouseleave', function (ev) {
-    //     ev.preventDefault();
-    //     $('.carousel-sync').carousel('cycle');
-    // });
+    carousels.forEach(c =>{
+        c.addEventListener('slid.bs.carousel',()=> carouselsLock.delete(c));
+        c.addEventListener('slide.bs.carousel', (e) => slideAllCarousels(e.direction,c));
+        c.addEventListener('mouseover', () => pauseAllCarouselsOnHover());
+        c.addEventListener('mouseleave', () => cycleAllCarouselsOnHoverLeave());
+    });
 
 });
 
