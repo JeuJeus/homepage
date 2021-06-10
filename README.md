@@ -10,10 +10,10 @@
 - Modern Design
 - Fully Responsive
 - One Page Layout
+- works without JS (no slideshos, only still images)
 
 ## Built with:
-- Bootstrap 4
-- jQuery
+- Bootstrap 5
 - FontAwesome
 
 --- 
