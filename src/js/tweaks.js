@@ -49,6 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
         c.addEventListener('mouseleave', () => cycleAllCarouselsOnHoverLeave());
     });
 
+    AOS.init({
+        offset: 240,
+        duration: 200,
+        disable: 'mobile'
+    });
 });
 
 
