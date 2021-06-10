@@ -10,7 +10,8 @@
 - Modern Design
 - Fully Responsive
 - One Page Layout
-- works without JS (no slideshos, only still images)
+- Animations on Scroll (Desktop only)
+- works without JS (no slideshos, only still images & no animations on scroll)
 
 ## Built with:
 - Bootstrap 5
