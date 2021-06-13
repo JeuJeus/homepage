@@ -138,6 +138,14 @@ h2 {
     border-left-style: solid;
 }
 
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
 /*TIMELINE*/
 ul.timeline {
     list-style-type: none;

@@ -22,8 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
+    const isLocalVersion = () => window.location.pathname.includes('homepage') && window.location.hostname.includes('localhost');
+
     //Only on main page
-    if(window.location.pathname === '/' || window.location.hostname.includes('localhost')) {
+    if(window.location.pathname === '/' || isLocalVersion()) {
 
         //#### Sync all Carousels together for optical perfection
         const carousels = document.querySelectorAll('.carousel-sync');
@@ -62,4 +64,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+if (history.scrollRestoration) history.scrollRestoration = 'manual';
+else {
+    window.onbeforeunload = () => {
+        document.querySelector('html').style.scrollBehavior = '';
+        window.scrollTo(0, 0);
+    }
+}
 
