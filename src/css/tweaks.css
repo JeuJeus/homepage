@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    position: relative;
+}
+
 .white-link {
     color: white;
 }
