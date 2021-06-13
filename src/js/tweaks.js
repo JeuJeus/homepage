@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    //#### Change Navbar Background when page is scrolled more than 50 pixels or burgermenu is opened for readability
     const navbar = document.querySelector('.navbar');
     const navbarNav = document.querySelector('.navbar-nav');
     const burgerMenu = document.querySelector('.navbar-toggler-icon');
@@ -24,10 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const isLocalVersion = () => window.location.pathname.includes('homepage') && window.location.hostname.includes('localhost');
 
-    //Only on main page
     if(window.location.pathname === '/' || isLocalVersion()) {
 
-        //#### Sync all Carousels together for optical perfection
         const carousels = document.querySelectorAll('.carousel-sync');
         let carouselsLock = new WeakSet();
 
@@ -59,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
             disable: 'mobile'
         });
 
-        //##### Scrollspy
         let scrollSpy = new bootstrap.ScrollSpy(document.body, {target: '#navbarNav'});
     }
 });
