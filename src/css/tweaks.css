@@ -10,14 +10,12 @@
 /*GLOBAL*/
 html {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 main {
     position: relative;
-}
-
-.white-link {
-    color: white;
 }
 
 /*NAVBAR*/
@@ -31,17 +29,12 @@ main {
     padding: 0.6em 0.5em;
 }
 
-.navbar.scrolled {
-    background-color: var(--somewhat-light-grey) !important;
-    transition: background-color 200ms linear;
-}
-
 .navbar-nav {
     background-color: var(--slightly-transparent-dark-grey);
     transition: background-color 200ms linear;
 }
 
-.navbar-nav.scrolled {
+.navbar-nav.scrolled, .navbar.scrolled {
     background-color: var(--somewhat-light-grey) !important;
     transition: background-color 200ms linear;
 }
@@ -64,6 +57,8 @@ body {
     background-image: url("../../img/blurredbackground.png");
     background-size: cover;
     background-color: var(--dark-grey) !important;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h2 {
