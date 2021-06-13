@@ -22,44 +22,44 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
+    //Only on main page
+    if(window.location.pathname === '/' || window.location.hostname.includes('localhost')) {
 
-    //#### Sync all Carousels together for optical perfection
-    const carousels = document.querySelectorAll('.carousel-sync');
-    let carouselsLock = new WeakSet();
+        //#### Sync all Carousels together for optical perfection
+        const carousels = document.querySelectorAll('.carousel-sync');
+        let carouselsLock = new WeakSet();
 
-    let slideAllCarousels = (direction,cyclingCarousel) => {
-        carousels.forEach(carousel => {
-            if(carousel === cyclingCarousel || carouselsLock.has(carousel)) return;
+        let slideAllCarousels = (direction, cyclingCarousel) => {
+            carousels.forEach(carousel => {
+                if (carousel === cyclingCarousel || carouselsLock.has(carousel)) return;
 
-            carouselsLock.add(carousel);
+                carouselsLock.add(carousel);
 
-            let carouselInstance = bootstrap.Carousel.getInstance(carousel);
-            if(direction === 'left') carouselInstance.next();
-            else carouselInstance.prev();
+                let carouselInstance = bootstrap.Carousel.getInstance(carousel);
+                if (direction === 'left') carouselInstance.next();
+                else carouselInstance.prev();
+            });
+        }
+
+        let pauseAllCarouselsOnHover = () => carousels.forEach(c => bootstrap.Carousel.getInstance(c).pause());
+        let cycleAllCarouselsOnHoverLeave = () => carousels.forEach(c => bootstrap.Carousel.getInstance(c).cycle());
+
+        carousels.forEach(c => {
+            c.addEventListener('slid.bs.carousel', () => carouselsLock.delete(c));
+            c.addEventListener('slide.bs.carousel', (e) => slideAllCarousels(e.direction, c));
+            c.addEventListener('mouseover', () => pauseAllCarouselsOnHover());
+            c.addEventListener('mouseleave', () => cycleAllCarouselsOnHoverLeave());
         });
+
+        AOS.init({
+            offset: 240,
+            duration: 200,
+            disable: 'mobile'
+        });
+
+        //##### Scrollspy
+        let scrollSpy = new bootstrap.ScrollSpy(document.body, {target: '#navbarNav'});
     }
-
-    let pauseAllCarouselsOnHover = () => carousels.forEach(c => bootstrap.Carousel.getInstance(c).pause());
-    let cycleAllCarouselsOnHoverLeave = () => carousels.forEach(c => bootstrap.Carousel.getInstance(c).cycle());
-
-    carousels.forEach(c =>{
-        c.addEventListener('slid.bs.carousel',()=> carouselsLock.delete(c));
-        c.addEventListener('slide.bs.carousel', (e) => slideAllCarousels(e.direction,c));
-        c.addEventListener('mouseover', () => pauseAllCarouselsOnHover());
-        c.addEventListener('mouseleave', () => cycleAllCarouselsOnHoverLeave());
-    });
-
-    AOS.init({
-        offset: 240,
-        duration: 200,
-        disable: 'mobile'
-    });
-
-    //##### Scrollspy
-    let scrollSpy = new bootstrap.ScrollSpy(document.body, {
-        target: '#navbarNav'
-    })
-
 });
 
 

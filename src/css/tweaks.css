@@ -185,6 +185,10 @@ ul.timeline > li:before {
 }
 
 /*FOOTER*/
+footer {
+    background: var(--somewhat-light-grey);
+}
+
 .footericon {
     padding-left: 0.5em;
     padding-right: 0.5em;
