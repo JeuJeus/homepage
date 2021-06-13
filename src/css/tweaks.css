@@ -122,7 +122,7 @@ h2 {
     background-color: var(--slightly-more-transparent-dark-grey);
 }
 
-.slightBorder {
+.slight-border {
     border-top-style: solid;
     border-top-width: 2px;
     border-right-width: 2px;
@@ -192,7 +192,7 @@ footer {
     background: var(--somewhat-light-grey);
 }
 
-.footericon {
+.footer-icon {
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
@@ -202,7 +202,7 @@ footer {
     padding-bottom: 0.5em;
 }
 
-.linkPadding {
+.link-padding {
     margin-top: 1em;
     margin-bottom: 1em;
 }
