@@ -178,8 +178,8 @@ ul.timeline > li:before {
     z-index: 400;
 }
 
-.timeline b {
-    color: white !important;
+.timeline .timeline-event {
+    color: white;
 }
 
 .timeline p {
@@ -196,17 +196,17 @@ footer {
     background: var(--somewhat-light-grey);
 }
 
-.footer-icon {
+footer .footer-icon {
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
 
-.top-buffer {
+footer .top-buffer {
     padding-top: 0.3em;
     padding-bottom: 0.5em;
 }
 
-.link-padding {
+footer .link-padding {
     margin-top: 1em;
     margin-bottom: 1em;
 }
