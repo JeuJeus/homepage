@@ -187,6 +187,10 @@ ul.timeline > li:before {
     padding-bottom: 1.5em;
 }
 
+.timeline .timeline-time {
+    color: var(--somewhat-lighter-grey) !important;
+}
+
 /*FOOTER*/
 footer {
     background: var(--somewhat-light-grey);
