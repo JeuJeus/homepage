@@ -56,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
             disable: 'mobile'
         });
 
-        let scrollSpy = new bootstrap.ScrollSpy(document.body, {target: '#navbarNav'});
     }
 });
 

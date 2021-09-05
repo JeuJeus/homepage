@@ -35,7 +35,7 @@ main {
 }
 
 .navbar-nav.scrolled, .navbar.scrolled {
-    background-color: var(--somewhat-light-grey) !important;
+    background-color: var(--somewhat-light-grey);
     transition: background-color 200ms linear;
 }
 
@@ -188,7 +188,7 @@ ul.timeline > li:before {
 }
 
 .timeline .timeline-time {
-    color: var(--somewhat-lighter-grey) !important;
+    color: var(--somewhat-lighter-grey);
 }
 
 /*FOOTER*/
