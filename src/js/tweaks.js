@@ -59,7 +59,19 @@ const initAnimationsOnScroll = () => {
 
 const isLocalVersion = () => window.location.pathname.includes('homepage') && window.location.hostname.includes('localhost');
 
+const MY_BIRTH_DATE = '1998-02-24';
+const MILLISECONDS_PER_YEAR = 3.15576e+10;
+const getAge = () => Math.floor((new Date() - new Date(MY_BIRTH_DATE).getTime()) / MILLISECONDS_PER_YEAR);
+
+const setMyCurrentAge = () => {
+    let aboutMeP = document.getElementById('#about-me');
+    aboutMeP.innerText = aboutMeP.innerText.replace('${MY_AGE}', getAge());
+};
+
 document.addEventListener("DOMContentLoaded", () => {
+
+    setMyCurrentAge();
+
     toggleNavbarTransparencyByScrollStatus();
 
     if(window.location.pathname === '/' || isLocalVersion()) {
