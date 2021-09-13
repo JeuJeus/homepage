@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+const toggleNavbarTransparencyByScrollStatus = () => {
 
     const navbar = document.querySelector('.navbar');
     const navbarNav = document.querySelector('.navbar-nav');
@@ -20,45 +20,55 @@ document.addEventListener("DOMContentLoaded", () => {
             navbarNav.classList.remove('scrolled');
         }
     };
+};
 
-    const isLocalVersion = () => window.location.pathname.includes('homepage') && window.location.hostname.includes('localhost');
+const syncAllImageCarousels = () => {
+    const carousels = document.querySelectorAll('.carousel-sync');
+    let carouselsLock = new WeakSet();
+
+    let slideAllCarousels = (direction, cyclingCarousel) => {
+        carousels.forEach(carousel => {
+            if (carousel === cyclingCarousel || carouselsLock.has(carousel)) return;
+
+            carouselsLock.add(carousel);
+
+            let carouselInstance = bootstrap.Carousel.getInstance(carousel);
+            if (direction === 'left') carouselInstance.next();
+            else carouselInstance.prev();
+        });
+    }
+
+    let pauseAllCarouselsOnHover = () => carousels.forEach(c => bootstrap.Carousel.getInstance(c).pause());
+    let cycleAllCarouselsOnHoverLeave = () => carousels.forEach(c => bootstrap.Carousel.getInstance(c).cycle());
+
+    carousels.forEach(c => {
+        c.addEventListener('slid.bs.carousel', () => carouselsLock.delete(c));
+        c.addEventListener('slide.bs.carousel', (e) => slideAllCarousels(e.direction, c));
+        c.addEventListener('mouseover', () => pauseAllCarouselsOnHover());
+        c.addEventListener('mouseleave', () => cycleAllCarouselsOnHoverLeave());
+    });
+};
+
+const initAnimationsOnScroll = () => {
+    AOS.init({
+        offset: 240,
+        duration: 200,
+        disable: 'mobile'
+    });
+};
+
+const isLocalVersion = () => window.location.pathname.includes('homepage') && window.location.hostname.includes('localhost');
+
+document.addEventListener("DOMContentLoaded", () => {
+    toggleNavbarTransparencyByScrollStatus();
 
     if(window.location.pathname === '/' || isLocalVersion()) {
-
-        const carousels = document.querySelectorAll('.carousel-sync');
-        let carouselsLock = new WeakSet();
-
-        let slideAllCarousels = (direction, cyclingCarousel) => {
-            carousels.forEach(carousel => {
-                if (carousel === cyclingCarousel || carouselsLock.has(carousel)) return;
-
-                carouselsLock.add(carousel);
-
-                let carouselInstance = bootstrap.Carousel.getInstance(carousel);
-                if (direction === 'left') carouselInstance.next();
-                else carouselInstance.prev();
-            });
-        }
-
-        let pauseAllCarouselsOnHover = () => carousels.forEach(c => bootstrap.Carousel.getInstance(c).pause());
-        let cycleAllCarouselsOnHoverLeave = () => carousels.forEach(c => bootstrap.Carousel.getInstance(c).cycle());
-
-        carousels.forEach(c => {
-            c.addEventListener('slid.bs.carousel', () => carouselsLock.delete(c));
-            c.addEventListener('slide.bs.carousel', (e) => slideAllCarousels(e.direction, c));
-            c.addEventListener('mouseover', () => pauseAllCarouselsOnHover());
-            c.addEventListener('mouseleave', () => cycleAllCarouselsOnHoverLeave());
-        });
-
-        AOS.init({
-            offset: 240,
-            duration: 200,
-            disable: 'mobile'
-        });
-
+        syncAllImageCarousels();
+        initAnimationsOnScroll();
     }
 });
 
+//restore scrollstate to page start on reload
 if (history.scrollRestoration) history.scrollRestoration = 'manual';
 else {
     window.onbeforeunload = () => {
