@@ -68,8 +68,17 @@ const setMyCurrentAge = () => {
     aboutMeP.innerText = aboutMeP.innerText.replace('${MY_AGE}', getAge());
 };
 
+const hackToSetDynamicHeightOfTypedHeadings = (s) => {
+    let typedHeadingDom = document.querySelector(`#typed-${s}-content`);
+    let typedHeading = document.querySelector(`#typed-${s}-heading`);
+    typedHeadingDom.style.display = 'block';
+    typedHeading.style.height = typedHeadingDom.getBoundingClientRect().height+'px';
+    typedHeadingDom.style.display = 'hidden';
+};
+
 const initiateTyping = () => {
     const toType = ['name','code','electronics','sports','music'];
+    toType.forEach(s => hackToSetDynamicHeightOfTypedHeadings(s));
     toType.forEach(s => new Typed(`#typed-${s}`, {stringsElement: `#typed-${s}-strings`, typeSpeed: 60, loop: true}));
 }
 
