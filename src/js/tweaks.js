@@ -69,11 +69,8 @@ const setMyCurrentAge = () => {
 };
 
 const initiateTyping = () => {
-    const typedName = new Typed('#typed-name', {stringsElement: '#typed-name-strings', typeSpeed: 60, loop: true});
-    const typedCode = new Typed('#typed-code', {stringsElement: '#typed-code-strings', typeSpeed: 60, loop: true});
-    const typedElectronics = new Typed('#typed-electronics', {stringsElement: '#typed-electronics-strings', typeSpeed: 60, loop: true});
-    const typedSports = new Typed('#typed-sports', {stringsElement: '#typed-sports-strings', typeSpeed: 60, loop: true});
-    const typedMusic = new Typed('#typed-music', {stringsElement: '#typed-music-strings', typeSpeed: 60, loop: true});
+    const toType = ['name','code','electronics','sports','music'];
+    toType.forEach(s => new Typed(`#typed-${s}`, {stringsElement: `#typed-${s}-strings`, typeSpeed: 60, loop: true}));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
