@@ -82,19 +82,38 @@ const initiateTyping = () => {
     toType.forEach(s => new Typed(`#typed-${s}`, {stringsElement: `#typed-${s}-strings`, typeSpeed: 60, loop: true}));
 }
 
+const mutationObserverCvBugFix = () => {
+    //TODO fix this bug -> the CV item in navbar is being set to active by $unclear when page is loaded
+    //seen when cv-table size is too long, only in firefox
+    let cvNavItem = document.getElementById('cv-nav-item');
+    const observer = new MutationObserver(mutations => {
+        mutations.forEach((mutation) => {
+            let targetClassList = mutation.target.classList;
+            if (window.scrollY <= 50 && targetClassList.contains('active')) targetClassList.remove('active')
+        });
+    });
+    observer.observe(cvNavItem, {attributes: true, childList: false, characterData: true});
+};
+
 document.addEventListener("DOMContentLoaded", () => {
 
     setMyCurrentAge();
     initiateTyping();
     toggleNavbarTransparencyByScrollStatus();
 
+    //only on main page and when on localhost e.g. in intellij
     if(window.location.pathname === '/' || isLocalVersion()) {
         syncAllImageCarousels();
         initAnimationsOnScroll();
     }
+
+    // set current active paragraph
+    new bootstrap.ScrollSpy(document.body, {target: '#navbarNav'});
+    mutationObserverCvBugFix();
+
 });
 
-//restore scrollstate to page start on reload
+// restore scrollstate to page start on reload
 if (history.scrollRestoration) history.scrollRestoration = 'manual';
 else {
     window.onbeforeunload = () => {
@@ -102,4 +121,3 @@ else {
         window.scrollTo(0, 0);
     }
 }
-
