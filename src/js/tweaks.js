@@ -50,6 +50,7 @@ const syncAllImageCarousels = () => {
 };
 
 const initAnimationsOnScroll = () => {
+    if(typeof AOS === 'undefined') return;
     AOS.init({
         offset: 240,
         duration: 200,
@@ -57,35 +58,42 @@ const initAnimationsOnScroll = () => {
     });
 };
 
-const isLocalVersion = () => window.location.pathname.includes('homepage') && window.location.hostname.includes('localhost');
-
 const MY_BIRTH_DATE = '1998-02-24';
 const MILLISECONDS_PER_YEAR = 3.15576e+10;
 const getAge = () => Math.floor((new Date() - new Date(MY_BIRTH_DATE).getTime()) / MILLISECONDS_PER_YEAR);
 
 const setMyCurrentAge = () => {
     let aboutMeP = document.getElementById('#about-me');
+    if (!aboutMeP) return;
+
     aboutMeP.innerText = aboutMeP.innerText.replace('${MY_AGE}', getAge());
 };
 
 const hackToSetDynamicHeightOfTypedHeadings = (s) => {
     let typedHeadingDom = document.querySelector(`#typed-${s}-content`);
     let typedHeading = document.querySelector(`#typed-${s}-heading`);
+    if (!typedHeadingDom || !typedHeading) return;
+
     typedHeadingDom.style.display = 'block';
-    typedHeading.style.height = typedHeadingDom.getBoundingClientRect().height+'px';
+    typedHeading.style.height = typedHeadingDom.getBoundingClientRect().height + 'px';
     typedHeadingDom.style.display = 'hidden';
 };
 
 const initiateTyping = () => {
-    const toType = ['name','code','electronics','sports','music'];
+    const toType = ['name', 'code', 'electronics', 'sports', 'music'];
+
     toType.forEach(s => hackToSetDynamicHeightOfTypedHeadings(s));
-    toType.forEach(s => new Typed(`#typed-${s}`, {stringsElement: `#typed-${s}-strings`, typeSpeed: 60, loop: true}));
+    toType.forEach(s => {
+        if(!document.querySelector(`#typed-${s}-strings`)) return;
+        new Typed(`#typed-${s}`, {stringsElement: `#typed-${s}-strings`, typeSpeed: 60, loop: true})
+    });
 }
 
 const mutationObserverCvBugFix = () => {
     //TODO fix this bug -> the CV item in navbar is being set to active by $unclear when page is loaded
     //seen when cv-table size is too long, only in firefox
     let cvNavItem = document.getElementById('cv-nav-item');
+    if (!cvNavItem) return;
     const observer = new MutationObserver(mutations => {
         mutations.forEach((mutation) => {
             let targetClassList = mutation.target.classList;
@@ -100,17 +108,12 @@ document.addEventListener("DOMContentLoaded", () => {
     setMyCurrentAge();
     initiateTyping();
     toggleNavbarTransparencyByScrollStatus();
-
-    //only on main page and when on localhost e.g. in intellij
-    if(window.location.pathname === '/' || isLocalVersion()) {
-        syncAllImageCarousels();
-        initAnimationsOnScroll();
-    }
+    syncAllImageCarousels();
+    initAnimationsOnScroll();
 
     // set current active paragraph
     new bootstrap.ScrollSpy(document.body, {target: '#navbarNav'});
     mutationObserverCvBugFix();
-
 });
 
 // restore scrollstate to page start on reload
