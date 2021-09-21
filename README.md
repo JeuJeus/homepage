@@ -9,9 +9,10 @@
 ## Features:
 - Modern Design
 - Fully Responsive
-- One Page Layout
+- One-Page Layout
 - Animations on Scroll (Desktop only)
-- works without JS (no slideshos, only still images & no animations on scroll)
+- Fancy typing-animated headings (Desktop only)
+- works without JS (no slideshows, only still images & no animations on scroll)
 
 ## Built with:
 - Bootstrap 5
