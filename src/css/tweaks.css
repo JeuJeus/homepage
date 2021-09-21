@@ -55,7 +55,7 @@ a:hover, a.text-light:hover {
 /*BODY*/
 body {
     background-image: url("../../img/blurredbackground.png");
-    background-size: cover;
+    background-size: contain;
     background-color: var(--dark-grey) !important;
     max-width: 100%;
     overflow-x: hidden;
