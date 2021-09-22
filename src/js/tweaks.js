@@ -117,6 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // restore scrollstate to page start on reload
+window.location.hash = '';
 if (history.scrollRestoration) history.scrollRestoration = 'manual';
 else {
     window.onbeforeunload = () => {
