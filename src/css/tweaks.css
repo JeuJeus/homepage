@@ -118,6 +118,11 @@ h2 {
     background-color: var(--slightly-more-transparent-dark-grey);
 }
 
+.card-body-text {
+    height: 14ex;
+    font-size: 2ex;
+}
+
 .card {
     background-color: var(--slightly-more-transparent-dark-grey);
 }
