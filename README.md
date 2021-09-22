@@ -1,4 +1,4 @@
-# ![My personal Homepage](https://jeujeus.de)
+# [My personal Homepage](https://jeujeus.de)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 ## Google Lighthouse Score:
@@ -11,12 +11,13 @@
 - Fully Responsive
 - One-Page Layout
 - Animations on Scroll (Desktop only)
-- Fancy typing-animated headings (Desktop only)
-- works without JS (no slideshows, only still images & no animations on scroll)
+- Fancy typing-animated headings
 
 ## Built with:
 - Bootstrap 5
 - FontAwesome
+- AnimateOnScroll
+- typed.js
 
 --- 
 
