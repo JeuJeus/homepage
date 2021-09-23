@@ -3,6 +3,7 @@ const toggleNavbarTransparencyByScrollStatus = () => {
     const navbar = document.querySelector('.navbar');
     const navbarNav = document.querySelector('.navbar-nav');
     const burgerMenu = document.querySelector('.navbar-toggler-icon');
+    const burgerMenuButton = document.querySelector('.navbar-toggler');
 
     burgerMenu.addEventListener('click', () => {
         if (!navbar.classList.contains('scrolled') && !navbarNav.classList.contains('scrolled')) {
@@ -15,7 +16,7 @@ const toggleNavbarTransparencyByScrollStatus = () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
             navbarNav.classList.add('scrolled');
-        } else {
+        } else if(burgerMenuButton.classList.contains('collapsed')){
             navbar.classList.remove('scrolled');
             navbarNav.classList.remove('scrolled');
         }
