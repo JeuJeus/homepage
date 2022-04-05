@@ -3,7 +3,7 @@
 
 ## Google Lighthouse Score:
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JeuJeus/homepage/master/img/score.png">
+  <img src="https://raw.githubusercontent.com/JeuJeus/homepage/master/static/img/score.png">
 </p>
 
 ## Features:
@@ -21,5 +21,5 @@
 
 --- 
 
-![image](https://raw.githubusercontent.com/JeuJeus/homepage/master/img/website.png)
+![image](https://raw.githubusercontent.com/JeuJeus/homepage/master/static/img/website.png)
 
