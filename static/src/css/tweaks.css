@@ -143,7 +143,7 @@ h2 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display:         flex;
+    display: flex;
 }
 
 /*TIMELINE*/
@@ -159,6 +159,7 @@ ul.timeline:before {
     background: white;
     display: inline-block;
     position: absolute;
+    top: 0.3em;
     left: 1.8em;
     width: 2px;
     height: 100%;
@@ -180,6 +181,7 @@ ul.timeline > li:before {
     left: 1.2em;
     width: 1.2em;
     height: 1.2em;
+    margin-top: 0.2em;
     z-index: 400;
 }
 
