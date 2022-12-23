@@ -50,17 +50,6 @@ const syncAllImageCarousels = () => {
     });
 };
 
-const MY_BIRTH_DATE = '1998-02-24';
-const MILLISECONDS_PER_YEAR = 3.15576e+10;
-const getAge = () => Math.floor((new Date() - new Date(MY_BIRTH_DATE).getTime()) / MILLISECONDS_PER_YEAR);
-
-const setMyCurrentAge = () => {
-    let aboutMeP = document.getElementById('#about-me');
-    if (!aboutMeP) return;
-
-    aboutMeP.innerText = aboutMeP.innerText.replace('${MY_AGE}', getAge());
-};
-
 const hackToSetDynamicHeightOfTypedHeadings = (s) => {
     let typedHeadingDom = document.querySelector(`#typed-${s}-content`);
     let typedHeading = document.querySelector(`#typed-${s}-heading`);
@@ -97,7 +86,6 @@ const mutationObserverCvBugFix = () => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    setMyCurrentAge();
     initiateTyping();
     toggleNavbarTransparencyByScrollStatus();
     syncAllImageCarousels();
