@@ -166,7 +166,6 @@ ul.timeline > li > .bullet {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 0.2em solid;
     left: 0em;
     width: 1.2em;
     height: 1.2em;
