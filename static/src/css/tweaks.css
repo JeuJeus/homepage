@@ -5,6 +5,7 @@
     --dark-grey: rgb(22, 22, 24);
     --somewhat-light-grey: rgb(52, 58, 64);
     --somewhat-lighter-grey: rgb(96, 104, 112);
+    --somewhat-more-lighter-grey: rgb(155, 158, 171);
 }
 
 /*GLOBAL*/
@@ -156,7 +157,7 @@ ul.timeline {
 
 ul.timeline > li {
     margin: 1.2em 0;
-    padding-left: 1.2em;
+    padding-left: 6em;
 }
 
 ul.timeline > li > .bullet {
@@ -166,12 +167,28 @@ ul.timeline > li > .bullet {
     position: absolute;
     border-radius: 50%;
     border: 0.2em solid;
-    left: 1.2em;
+    left: 0em;
     width: 1.2em;
     height: 1.2em;
     margin-top: 0.2em;
     z-index: 400;
 }
+
+ul.timeline > li > .branch-study {
+    left: 2em;
+    background: var(--somewhat-more-lighter-grey);
+}
+
+ul.timeline > li > .branch-first-job {
+    left: 4em;
+    background: var(--somewhat-lighter-grey);
+}
+
+ul.timeline > li > .branch-second-job {
+    left: 6em;
+    background: var(--somewhat-light-grey);
+}
+
 
 .timeline .timeline-event {
     color: white;
@@ -186,7 +203,7 @@ ul.timeline > li > .bullet {
     color: var(--somewhat-lighter-grey);
 }
 
-.timeline .connecting-line,svg {
+.timeline .connecting-line, svg {
     display: block;
     position: absolute;
     top: 0;
@@ -195,10 +212,22 @@ ul.timeline > li > .bullet {
     height: 100%;
 }
 
-.timeline .connecting-line,svg .line,line {
+.timeline .connecting-line, svg .line, line {
     display: block;
     stroke-width: 3px;
     stroke: rgb(255, 255, 255);
+}
+
+.timeline > li > .connecting-line > .line, .branch-study {
+    stroke: var(--somewhat-more-lighter-grey) !important;
+}
+
+.timeline > li > .connecting-line > .line, .branch-first-job {
+    stroke: var(--somewhat-lighter-grey)!important;
+}
+
+.timeline > li > .connecting-line > .line, .branch-second-job {
+    stroke: var(--somewhat-light-grey)!important;
 }
 
 /*FOOTER*/

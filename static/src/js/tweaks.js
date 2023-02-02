@@ -85,16 +85,23 @@ const mutationObserverCvBugFix = () => {
 };
 
 const connectedCVBulletPoints = [
-    {from: 'timeline-bullet-abitur', to: 'timeline-bullet-fsj'},
-    {from: 'timeline-bullet-fsj', to: 'timeline-bullet-uni-lpz'},
-    {from: 'timeline-bullet-uni-lpz', to: 'timeline-bullet-fhdw'},
-    {from: 'timeline-bullet-fhdw', to: 'timeline-bullet-kb'},
-    {from: 'timeline-bullet-kb', to: 'timeline-bullet-wismar'},
-    {from: 'timeline-bullet-wismar', to: 'timeline-bullet-bachelor'},
-    {from: 'timeline-bullet-bachelor', to: 'timeline-bullet-fhdw-dozent'},
+    {from: 'timeline-bullet-abitur', to: 'timeline-bullet-fsj', color: ''},
+    {from: 'timeline-bullet-fsj', to: 'timeline-bullet-before-kb', color: ''},
+    {from: 'timeline-bullet-fsj', to: 'timeline-bullet-uni-lpz', color: 'branch-study'},
+    {from: 'timeline-bullet-uni-lpz', to: 'timeline-bullet-fhdw', color: 'branch-study'},
+    {from: 'timeline-bullet-fhdw', to: 'timeline-bullet-kb', color: 'branch-first-job'},
+    {from: 'timeline-bullet-fhdw', to: 'timeline-bullet-bachelor', color: 'branch-study'},
+    {from: 'timeline-bullet-bachelor', to: 'timeline-bullet-after-bachelor', color: 'branch-study'},
+    {from: 'timeline-bullet-before-kb', to: 'timeline-bullet-after-bachelor', color: ''},
+    {from: 'timeline-bullet-after-bachelor', to: 'timeline-bullet-wismar', color: 'branch-study'},
+    {from: 'timeline-bullet-before-dozent', to: 'timeline-bullet-fhdw-dozent', color: 'branch-second-job'},
+    {from: 'timeline-bullet-after-bachelor', to: 'timeline-bullet-currently', color: ''},
+    {from: 'timeline-bullet-wismar', to: 'timeline-bullet-study-currently', color: 'branch-study'},
+    {from: 'timeline-bullet-kb', to: 'timeline-bullet-first-job-currently', color: 'branch-first-job'},
+    {from: 'timeline-bullet-fhdw-dozent', to: 'timeline-bullet-second-job-currently', color: 'branch-second-job'},
 ];
 
-const connectTwoBulletPointsWithLine = (timeline, startPoint, endPoint) => {
+const connectTwoBulletPointsWithLine = (timeline, startPoint, endPoint, color) => {
     const start = document.querySelector(`#${startPoint}`);
     const end = document.querySelector(`#${endPoint}`);
 
@@ -104,7 +111,8 @@ const connectTwoBulletPointsWithLine = (timeline, startPoint, endPoint) => {
     timeline.appendChild(connectingSvg);
 
     const connectingLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-    connectingLine.classList.add('line');
+    if(color!=='') connectingLine.classList.add('line', color);
+    else connectingLine.classList.add('line');
     connectingLine.setAttribute('x1', start.offsetLeft + (start.offsetWidth / 2));
     connectingLine.setAttribute('y1', start.offsetTop + (start.offsetHeight / 2));
     connectingLine.setAttribute('x2', end.offsetLeft + (end.offsetWidth / 2));
@@ -113,9 +121,9 @@ const connectTwoBulletPointsWithLine = (timeline, startPoint, endPoint) => {
 };
 
 const connectCVBulletPointsToTimelineTree = () => {
-    document.querySelectorAll('.timeline > .bullet').forEach(b => b.remove());
+    document.querySelectorAll('.timeline > .connecting-line').forEach(b => b.remove());
     const timeline = document.querySelector('.timeline');
-    connectedCVBulletPoints.forEach(tuple => connectTwoBulletPointsWithLine(timeline, tuple.from, tuple.to));
+    connectedCVBulletPoints.forEach(tuple => connectTwoBulletPointsWithLine(timeline, tuple.from, tuple.to, tuple.color));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
