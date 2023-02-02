@@ -89,42 +89,33 @@ const connectedCVBulletPoints = [
     {from: 'timeline-bullet-fsj', to: 'timeline-bullet-uni-lpz'},
     {from: 'timeline-bullet-uni-lpz', to: 'timeline-bullet-fhdw'},
     {from: 'timeline-bullet-fhdw', to: 'timeline-bullet-kb'},
+    {from: 'timeline-bullet-kb', to: 'timeline-bullet-wismar'},
     {from: 'timeline-bullet-wismar', to: 'timeline-bullet-bachelor'},
     {from: 'timeline-bullet-bachelor', to: 'timeline-bullet-fhdw-dozent'},
 ];
 
 const connectTwoBulletPointsWithLine = (timeline, startPoint, endPoint) => {
-    const start = document.querySelector(`#${startPoint}`, `:before`);
-    const end = document.querySelector(`#${endPoint}`, `:before`);
+    const start = document.querySelector(`#${startPoint}`);
+    const end = document.querySelector(`#${endPoint}`);
 
-    // const startX = start.offsetLeft + (start.offsetWidth / 2);
-    // const startY = start.offsetTop + (start.offsetHeight / 2);
-    // const endX = end.offsetLeft + (end.offsetWidth / 2);
-    // const endY = end.offsetTop + (end.offsetHeight / 2);
-    const startX = start.offsetLeft;
-    const startY = start.offsetTop;
-    const endX = end.offsetLeft;
-    const endY = end.offsetTop;
-
-    let connectingSvg = document.createElementNS('"http://www.w3.org/2000/svg', 'svg');
+    let connectingSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     connectingSvg.classList.add('connecting-line');
-    connectingSvg.setAttribute('viewBox','0 0 100 100');
 
     timeline.appendChild(connectingSvg);
 
     const connectingLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
     connectingLine.classList.add('line');
-    connectingLine.setAttribute('stroke', 'white');
-    connectingLine.setAttribute('x1', startX);
-    connectingLine.setAttribute('y1', startY);
-    connectingLine.setAttribute('x2', endX);
-    connectingLine.setAttribute('y2', endY);
+    connectingLine.setAttribute('x1', start.offsetLeft + (start.offsetWidth / 2));
+    connectingLine.setAttribute('y1', start.offsetTop + (start.offsetHeight / 2));
+    connectingLine.setAttribute('x2', end.offsetLeft + (end.offsetWidth / 2));
+    connectingLine.setAttribute('y2', end.offsetTop + (end.offsetHeight / 2));
     connectingSvg.appendChild(connectingLine);
 };
 
 const connectCVBulletPointsToTimelineTree = () => {
+    document.querySelectorAll('.timeline > .bullet').forEach(b => b.remove());
     const timeline = document.querySelector('.timeline');
-    connectedCVBulletPoints.forEach(tuple => connectTwoBulletPointsWithLine(timeline, tuple.from, tuple.to))
+    connectedCVBulletPoints.forEach(tuple => connectTwoBulletPointsWithLine(timeline, tuple.from, tuple.to));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -138,6 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
     new bootstrap.ScrollSpy(document.body, {target: '#navbarNav'});
     mutationObserverCvBugFix();
 });
+window.addEventListener('resize', () => connectCVBulletPointsToTimelineTree());
 
 // restore scrollstate to page start on reload
 window.location.hash = '';
