@@ -16,7 +16,6 @@
 ## Built with:
 - Bootstrap 5
 - FontAwesome
-- AnimateOnScroll
 - typed.js
 
 --- 
