@@ -10,7 +10,6 @@
 - Modern Design
 - Fully Responsive
 - One-Page Layout
-- Animations on Scroll (Desktop only)
 - Fancy typing-animated headings
 
 ## Built with:
