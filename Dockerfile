@@ -1,12 +1,13 @@
 FROM nginx:stable-alpine
 
-# Remove sym links from nginx image
 RUN rm /var/log/nginx/access.log
 RUN rm /var/log/nginx/error.log
 RUN apk add logrotate
 COPY config/cron.daily/logrotate.sh /etc/cron.daily/logrotate.sh
 COPY config/logrotate.conf /etc/logrotate.conf
 COPY config/logrotate.d/nginx /etc/logrotate.d/nginx
+
+COPY config/nginx/nginx.conf /etc/nginx/nginx.conf
 
 RUN apk add --no-cache python3 py3-pip
 RUN apk add coreutils
