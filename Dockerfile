@@ -22,4 +22,4 @@ COPY config/cron.daily/matomo-importer-script.sh /etc/cron.daily/matomo-importer
 
 COPY static /usr/share/nginx/html
 
-CMD crond -f -l 2 -L /dev/stdout && nginx -g 'daemon off;'
+CMD crond && nginx -g 'daemon off;'
