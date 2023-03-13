@@ -96,11 +96,11 @@ const connectedCVBulletPoints = [
     {from: 'timeline-bullet-before-kb', to: 'timeline-bullet-after-bachelor'},
     {from: 'timeline-bullet-after-bachelor', to: 'timeline-bullet-wismar', color: 'branch-study'},
     {from: 'timeline-bullet-after-bachelor', to: 'timeline-bullet-before-dozent'},
-    {from: 'timeline-bullet-before-dozent', to: 'timeline-bullet-fhdw-dozent', color: 'branch-second-job'},
     {from: 'timeline-bullet-before-dozent', to: 'timeline-bullet-currently'},
     {from: 'timeline-bullet-wismar', to: 'timeline-bullet-study-currently', color: 'branch-study'},
     {from: 'timeline-bullet-kb', to: 'timeline-bullet-first-job-currently', color: 'branch-first-job'},
-    {from: 'timeline-bullet-fhdw-dozent', to: 'timeline-bullet-second-job-currently', color: 'branch-second-job'},
+    {from: 'timeline-bullet-before-dozent', to: 'timeline-bullet-fhdw-dozent', color: 'branch-second-job'},
+    {from: 'timeline-bullet-fhdw-dozent', to: 'timeline-bullet-after-dozent', color: 'branch-second-job'},
 ];
 
 const connectTwoBulletPointsWithLine = (timeline, startPoint, endPoint, color) => {
