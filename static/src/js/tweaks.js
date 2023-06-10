@@ -16,7 +16,7 @@ const toggleNavbarTransparencyByScrollStatus = () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
             navbarNav.classList.add('scrolled');
-        } else if (burgerMenuButton.classList.contains('collapsed')) {
+        } else if (burgerMenuButton.classList.contains('collapsed') || (!burgerMenuButton.classList.contains('collapsed') && window.scrollY <= 50)) {
             navbar.classList.remove('scrolled');
             navbarNav.classList.remove('scrolled');
         }
