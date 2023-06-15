@@ -8,4 +8,7 @@ COPY static /usr/share/nginx/html
 
 RUN (echo -e "*   0   *   *   *   /usr/sbin/logrotate --force --verbose /etc/logrotate.conf\n") | crontab -
 
+RUN mkdir /var/log/nginx/matomo
+RUN touch /var/log/nginx/matomo/access_log.log
+
 CMD crond -b && nginx -g 'daemon off;'
