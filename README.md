@@ -14,5 +14,5 @@
 
 --- 
 
-![image](https://raw.githubusercontent.com/JeuJeus/homepage/master/static/img/website.png)
+![website.png](static%2Fimg%2Fwebsite.png)
 
