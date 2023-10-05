@@ -237,21 +237,6 @@ footer {
     background: var(--somewhat-light-grey);
 }
 
-footer .footer-icon {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-
-footer .top-buffer {
-    padding-top: 0.3em;
-    padding-bottom: 0.5em;
-}
-
-footer .link-padding {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
 
 /*JUMBOTRON / IMPRESSUM*/
 .jumbotron {
