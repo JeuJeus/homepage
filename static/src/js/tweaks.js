@@ -63,7 +63,7 @@ const hackToSetDynamicHeightOfTypedHeadings = (s) => {
 const initiateTyping = () => {
     const toType = ['name', 'code', 'electronics', 'sports', 'music'];
 
-    toType.forEach(s => hackToSetDynamicHeightOfTypedHeadings(s));
+    // toType.forEach(s => hackToSetDynamicHeightOfTypedHeadings(s));
     toType.forEach(s => {
         if (!document.querySelector(`#typed-${s}-strings`)) return;
         new Typed(`#typed-${s}`, {stringsElement: `#typed-${s}-strings`, typeSpeed: 60, loop: true})

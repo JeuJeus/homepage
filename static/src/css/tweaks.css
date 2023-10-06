@@ -145,6 +145,19 @@ h2 {
     margin-left: .75rem;
 }
 
+/*TYPED*/
+
+.typing-container {
+    position: relative;
+}
+
+.typed-placeholder {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
 /*FEATURETTES - IMAGE DISPLAY*/
 .featurette-heading {
     font-weight: 300;
