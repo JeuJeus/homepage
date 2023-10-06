@@ -14,7 +14,7 @@
     --somewhat-more-lighter-grey: rgb(155, 158, 171);
 }
 
-/*FONTS*/
+/*FONTS AND COLORS*/
 @font-face {
     font-family: 'Hack Bold';
     src: url('../webfonts/Hack-Bold.ttf');
@@ -37,6 +37,7 @@ h1, .text-gold {
 .timeline-event, .timeline-time, .nav-link {
     font-family: "Hack", monospace;
     font-size: 1rem !important;
+    color: var(--peach);
 }
 
 .btn-gold {
@@ -56,7 +57,7 @@ h1, .text-gold {
 
 .btn-outline-gold:hover {
     border-color: var(--peach);
-    color: var(--peach)!important;
+    color: var(--peach) !important;
 }
 
 .link-peach {
@@ -137,10 +138,6 @@ h2 {
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
-}
-
-.marketing h2 {
-    font-weight: 400;
 }
 
 .marketing .col-lg-4 p {
@@ -224,8 +221,12 @@ ul.timeline > li > .branch-second-job {
 }
 
 
-.timeline .timeline-event {
-    color: var(--peach);
+.timeline-event {
+    background-color: var(--peach);
+    color: var(--black);
+    padding: 0.2em 0.5em;
+    position: relative;
+    min-height: 40px;
 }
 
 .timeline p {
