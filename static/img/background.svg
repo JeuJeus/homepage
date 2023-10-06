@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.77771465"
+     inkscape:cx="499.54055"
+     inkscape:cy="561.25984"
+     inkscape:window-width="3840"
+     inkscape:window-height="2007"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs>
+    <filter id="whyShouldYouReadThis" x="0" y="0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.6" />
+    </filter>
+  </defs>
+  <defs
+     id="defs2">
+    <rect
+       x="3.2619486"
+       y="2.8544797"
+       width="787.31028"
+       height="1117.0614"
+       id="rect55889" />
+    <rect
+       x="49.156037"
+       y="41.396156"
+       width="601.91836"
+       height="1000.4415"
+       id="rect4719" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     filter="url(#whyShouldYouReadThis)">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text4717"
+       style="fill:white;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;white-space:pre;shape-inside:url(#rect4719)" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text55887"
+       style="font-style:normal;font-weight:normal;font-size:13.3333px;line-height:1.15;font-family:sans-serif;white-space:pre;shape-inside:url(#rect55889);fill:#fff;fill-opacity:1;stroke:none"><tspan
+         x="3.2617188"
+         y="13.983696"
+         id="tspan69855"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69853">package de.jeujeus.why.you.reading.this;
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="29.31699"
+         id="tspan69859"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69857">
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="44.650284"
+         id="tspan69863"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69861">public class WhyYouReadThis {
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="59.983577"
+         id="tspan69867"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69865">
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="75.316871"
+         id="tspan69871"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69869">    private WhyYouReadThis() {
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="90.650169"
+         id="tspan69875"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69873">    }
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="105.98347"
+         id="tspan69879"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69877">
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="121.31676"
+         id="tspan69883"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69881">    public static List&lt;Cell&gt; calculateNextWhyYouReadThis(List&lt;Cell&gt; currentWhyYouReadThisCells) {
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="136.65006"
+         id="tspan69887"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69885">        final Table&lt;Integer, Integer, Cell&gt; currentWhyYouReadThis = </tspan></tspan><tspan
+         x="3.2617188"
+         y="151.98336"
+         id="tspan69891"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69889">WhyYouReadThis.createWhyYouReadThisFromList(currentWhyYouReadThisCells);
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="167.31666"
+         id="tspan69895"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69893">        final Table&lt;Integer, Integer, Cell&gt; nextWhyYouReadThis = </tspan></tspan><tspan
+         x="3.2617188"
+         y="182.64996"
+         id="tspan69899"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69897">WhyYouReadThis.calculateNextWhyYouReadThis(currentWhyYouReadThis);
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="197.98325"
+         id="tspan69903"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69901">
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="213.31655"
+         id="tspan69907"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69905">        return nextWhyYouReadThis.cellSet()
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="228.64985"
+         id="tspan69911"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69909">                .parallelStream()
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="243.98315"
+         id="tspan69915"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69913">                .map(Table.Cell::getValue)
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="259.31644"
+         id="tspan69919"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69917">                .toList();
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="274.64974"
+         id="tspan69923"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69921">    }
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="289.98302"
+         id="tspan69927"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69925">
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="305.31631"
+         id="tspan69931"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69929">    static Table&lt;Integer, Integer, Cell&gt; createWhyYouReadThisFromList(List&lt;Cell&gt; noReallyWhy) {
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="320.64959"
+         id="tspan69935"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69933">        return noReallyWhy.parallelStream()
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="335.98287"
+         id="tspan69939"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69937">                .collect(toTable(
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="351.31615"
+         id="tspan69943"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69941">                        Cell::getXCoordinate,
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="366.64944"
+         id="tspan69947"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69945">                        Cell::getYCoordinate,
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="381.98272"
+         id="tspan69951"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69949">                        cell -&gt; cell,
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="397.316"
+         id="tspan69955"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69953">                        HashBasedTable::create));
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="412.64928"
+         id="tspan69959"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69957">    }
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="427.98257"
+         id="tspan69963"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69961">
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="443.31585"
+         id="tspan69967"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69965">    public static Table&lt;Integer, Integer, Cell&gt; calculateNextWhyYouReadThis(Table&lt;Integer, </tspan></tspan><tspan
+         x="3.2617188"
+         y="458.64913"
+         id="tspan69971"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69969">Integer, Cell&gt; currentWhyYouReadThis) {
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="473.98241"
+         id="tspan69975"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69973">
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="489.3157"
+         id="tspan69979"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69977">        final Table&lt;Integer, Integer, Cell&gt; nextField = </tspan></tspan><tspan
+         x="3.2617188"
+         y="504.64898"
+         id="tspan69983"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69981">Field.generateNextAskingMeWhy(xLowestIndex, xHighestIndex, yLowestIndex, yHighestIndex);
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="519.98226"
+         id="tspan69987"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69985">
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="535.31554"
+         id="tspan69991"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69989">        final ImmutableTable&lt;Integer, Integer, Cell&gt; onlyAliveCellsWithNeighbours = </tspan></tspan><tspan
+         x="3.2617188"
+         y="550.64886"
+         id="tspan69995"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69993">reduceWhyYouReadThisToAliveCellsWithNeighbours(currentWhyYouReadThis);
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="565.98217"
+         id="tspan69999"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan69997">
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="581.31548"
+         id="tspan70003"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70001">        nextField.cellSet()
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="596.6488"
+         id="tspan70007"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70005">                .parallelStream()
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="611.98211"
+         id="tspan70011"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70009">                .map(Table.Cell::getValue)
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="627.31542"
+         id="tspan70015"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70013">                .forEach(c -&gt; {
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="642.64873"
+         id="tspan70019"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70017">                    Cell cellFromOldWhyYouReadThis = </tspan></tspan><tspan
+         x="3.2617188"
+         y="657.98205"
+         id="tspan70023"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70021">Optional.ofNullable(onlyAliveCellsWithNeighbours.get(c.getXCoordinate(), c.getYCoordinate()))
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="673.31536"
+         id="tspan70027"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70025">                            .orElse(new Cell(c.getXCoordinate(), c.getYCoordinate()));
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="688.64867"
+         id="tspan70031"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70029">                    c.setAlive(Cell.isAliveNextWhyYouReadThis(onlyAliveCellsWithNeighbours, </tspan></tspan><tspan
+         x="3.2617188"
+         y="703.98199"
+         id="tspan70035"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70033">cellFromOldWhyYouReadThis));
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="719.3153"
+         id="tspan70039"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70037">                });
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="734.64861"
+         id="tspan70043"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70041">
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="749.98193"
+         id="tspan70047"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70045">        return TrimmedField.trimDeadOuterCellsFromField(nextField);
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="765.31524"
+         id="tspan70051"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70049">    }
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="780.64855"
+         id="tspan70055"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70053">
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="795.98186"
+         id="tspan70059"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70057">    private static ImmutableTable&lt;Integer, Integer, Cell&gt; </tspan></tspan><tspan
+         x="3.2617188"
+         y="811.31518"
+         id="tspan70063"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70061">reduceWhyYouReadThisToAliveCellsWithNeighbours(final Table&lt;Integer, Integer, Cell&gt; </tspan></tspan><tspan
+         x="3.2617188"
+         y="826.64849"
+         id="tspan70067"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70065">currentWhyYouReadThis) {
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="841.9818"
+         id="tspan70071"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70069">        return currentWhyYouReadThis.cellSet()
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="857.31512"
+         id="tspan70075"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70073">                .parallelStream()
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="872.64843"
+         id="tspan70079"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70077">                .map(Table.Cell::getValue)
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="887.98174"
+         id="tspan70083"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70081">                .filter(Cell::isAlive)
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="903.31506"
+         id="tspan70087"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70085">                .map(livingCell -&gt; getCellAndItsNeighbours(currentWhyYouReadThis, livingCell))
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="918.64837"
+         id="tspan70091"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70089">                .flatMap(livingCellWithNeighbours -&gt; livingCellWithNeighbours.cellSet()
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="933.98168"
+         id="tspan70095"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70093">                        .parallelStream())
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="949.31499"
+         id="tspan70099"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70097">                .collect(ImmutableTable.toImmutableTable(
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="964.64831"
+         id="tspan70103"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70101">                        Table.Cell::getRowKey,
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="979.98162"
+         id="tspan70107"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70105">                        Table.Cell::getColumnKey,
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="995.31493"
+         id="tspan70111"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70109">                        Table.Cell::getValue,
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="1010.6482"
+         id="tspan70115"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70113">                        (c1, c2) -&gt; c1
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="1025.9816"
+         id="tspan70119"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70117">                ));
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="1041.3149"
+         id="tspan70123"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70121">    }
+</tspan></tspan><tspan
+         x="3.2617188"
+         y="1056.6481"
+         id="tspan70127"><tspan
+           style="font-family:Hack;-inkscape-font-specification:Hack"
+           id="tspan70125">}
+</tspan></tspan></text>
+  </g>
+</svg>

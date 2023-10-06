@@ -95,8 +95,17 @@ html, body {
 }
 
 .navbar-nav {
-    background-color: var(--slightly-transparent-dark-grey);
     transition: background-color 200ms linear;
+}
+
+.navbar-nav > li > a {
+    text-shadow: 1px 1px 2px var(--black),
+    0 0 1em var(--black),
+    0 0 0.2em var(--black);
+}
+
+.navbar-brand > img {
+    filter: drop-shadow(0px 0px 10px var(--black));
 }
 
 .navbar-nav.scrolled, .navbar.scrolled {
@@ -119,7 +128,7 @@ a:hover, a.text-light:hover {
 
 /*BODY*/
 body {
-    background-image: url("../../img/blurredbackground.png");
+    background-image: url("../../img/background.svg");
     background-size: contain;
     background-color: var(--dark-grey) !important;
     max-width: 100%;
