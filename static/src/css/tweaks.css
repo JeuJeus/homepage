@@ -8,6 +8,26 @@
     --somewhat-more-lighter-grey: rgb(155, 158, 171);
 }
 
+/*FONTS*/
+@font-face {
+    font-family: 'Hack Bold';
+    src: url('../webfonts/Hack-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Hack Bold';
+    src: url('../webfonts/Hack-Regular.ttf');
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Hack Bold", monospace;
+}
+
+.timeline-event,.timeline-time, .nav-link {
+    font-family: "Hack",monospace;
+    font-size: 1rem!important;
+}
+
 /*GLOBAL*/
 html {
     scroll-behavior: smooth;
