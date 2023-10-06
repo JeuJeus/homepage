@@ -1,5 +1,11 @@
 /*VARIABLES*/
 :root {
+    --pink: #F24B59;
+    --gold: #F2C46D;
+    --orange: #F25C05;
+    --peach: #F29979;
+    --black: #0D0D0D;
+
     --slightly-transparent-dark-grey: rgba(22, 22, 24, 0.8);
     --slightly-more-transparent-dark-grey: rgba(22, 22, 24, 0.7);
     --dark-grey: rgb(22, 22, 24);
@@ -21,12 +27,52 @@
 
 h1, h2, h3, h4, h5 {
     font-family: "Hack Bold", monospace;
+    color: var(--pink);
 }
 
-.timeline-event,.timeline-time, .nav-link {
-    font-family: "Hack",monospace;
-    font-size: 1rem!important;
+h1, .text-gold {
+    color: var(--gold);
 }
+
+.timeline-event, .timeline-time, .nav-link {
+    font-family: "Hack", monospace;
+    font-size: 1rem !important;
+}
+
+.btn-gold {
+    color: var(--somewhat-lighter-grey);
+    background-color: var(--gold);
+}
+
+.btn-gold:hover {
+    color: var(--somewhat-lighter-grey);
+    background-color: var(--peach);
+}
+
+.btn-outline-gold {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.btn-outline-gold:hover {
+    border-color: var(--peach);
+    color: var(--peach)!important;
+}
+
+.link-peach {
+    color: var(--peach);
+}
+
+img {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+img:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
 
 /*GLOBAL*/
 html {
@@ -40,7 +86,7 @@ html, body {
 
 /*NAVBAR*/
 .nav-link {
-    padding: 0.5em;
+    color: var(--peach)
 }
 
 .navbar {
@@ -53,7 +99,7 @@ html, body {
 }
 
 .navbar-nav.scrolled, .navbar.scrolled {
-    background-color: var(--somewhat-light-grey);
+    background-color: var(--black);
     transition: background-color 200ms linear;
 }
 
@@ -131,10 +177,6 @@ h2 {
     background-color: var(--slightly-more-transparent-dark-grey);
 }
 
-.card-body-text {
-    height: 8em;
-}
-
 .slight-border {
     border-width: 2px;
     border-style: solid;
@@ -183,7 +225,7 @@ ul.timeline > li > .branch-second-job {
 
 
 .timeline .timeline-event {
-    color: white;
+    color: var(--peach);
 }
 
 .timeline p {
@@ -192,7 +234,7 @@ ul.timeline > li > .branch-second-job {
 }
 
 .timeline .timeline-time {
-    color: var(--somewhat-lighter-grey);
+    color: var(--gold);
 }
 
 .timeline .connecting-line, svg {
@@ -224,7 +266,7 @@ ul.timeline > li > .branch-second-job {
 
 /*FOOTER*/
 footer {
-    background: var(--somewhat-light-grey);
+    background: var(--black);
 }
 
 
