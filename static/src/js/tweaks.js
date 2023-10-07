@@ -100,7 +100,7 @@ const connectTwoBulletPointsWithLine = (timeline, startPoint, endPoint, color) =
 
     const connectingLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
     connectingLine.classList.add('line');
-    if(color) connectingLine.classList.add( color);
+    if (color) connectingLine.classList.add(color);
     connectingLine.setAttribute('x1', start.offsetLeft + (start.offsetWidth / 2));
     connectingLine.setAttribute('y1', start.offsetTop + (start.offsetHeight / 2));
     connectingLine.setAttribute('x2', end.offsetLeft + (end.offsetWidth / 2));
