@@ -70,20 +70,6 @@ const initiateTyping = () => {
     });
 }
 
-const mutationObserverCvBugFix = () => {
-    //TODO fix this bug -> the CV item in navbar is being set to active by $unclear when page is loaded
-    //seen when cv-table size is too long, only in firefox
-    let cvNavItem = document.getElementById('cv-nav-item');
-    if (!cvNavItem) return;
-    const observer = new MutationObserver(mutations => {
-        mutations.forEach((mutation) => {
-            let targetClassList = mutation.target.classList;
-            if (window.scrollY <= 50 && targetClassList.contains('active')) targetClassList.remove('active')
-        });
-    });
-    observer.observe(cvNavItem, {attributes: true, childList: false, characterData: true});
-};
-
 const connectedCVBulletPoints = [
     {from: 'timeline-bullet-before-abitur', to: 'timeline-bullet-abitur'},
     {from: 'timeline-bullet-abitur', to: 'timeline-bullet-fsj'},
@@ -137,7 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // set current active paragraph
     new bootstrap.ScrollSpy(document.body, {target: '#navbarNav'});
-    mutationObserverCvBugFix();
 });
 window.addEventListener('resize', () => connectCVBulletPointsToTimelineTree());
 
