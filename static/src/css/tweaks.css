@@ -44,7 +44,7 @@ h1, .text-gold {
     filter: drop-shadow(0px 0px 10px var(--black));
 }
 
-.timeline-event, .timeline-time, .nav-link {
+.timeline-time, .timeline-event, .nav-link {
     font-family: "Hack", monospace;
     font-size: 1rem !important;
     color: var(--peach);
@@ -222,20 +222,12 @@ ul.timeline > li > .branch-second-job {
 }
 
 
-.timeline-event {
+.timeline-time {
     background-color: var(--peach);
     color: var(--black);
-    padding: 0.2em 0.5em;
-    position: relative;
-    min-height: 40px;
 }
 
-.timeline p {
-    padding-top: 1em;
-    padding-bottom: 1.5em;
-}
-
-.timeline .timeline-time {
+.timeline .timeline-event {
     color: var(--gold);
 }
 
