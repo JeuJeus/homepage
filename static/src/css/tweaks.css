@@ -14,7 +14,7 @@
     --somewhat-more-lighter-grey: rgb(155, 158, 171);
 }
 
-/*FONTS AND COLORS*/
+/*FONTS*/
 @font-face {
     font-family: 'Hack Bold';
     src: url('../webfonts/Hack-Bold.ttf');
@@ -34,20 +34,34 @@ body {
     font-family: "IBM Plex Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+.hack-font {
     font-family: "Hack Bold", monospace;
+}
+
+/*COLORS*/
+
+.text-pink {
     color: var(--pink);
 }
 
-h1, .text-gold {
-    color: var(--gold);
-    filter: drop-shadow(0px 0px 10px var(--black));
+.text-peach {
+    color: var(--peach);
 }
 
-.timeline-time, .timeline-event, .nav-link {
-    font-family: "Hack", monospace;
-    font-size: 1rem !important;
-    color: var(--peach);
+.text-gold {
+    color: var(--gold);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.background-peach {
+    background-color: var(--peach);
+}
+
+.text-black-shadow {
+    filter: drop-shadow(0px 0px 10px var(--black));
 }
 
 .btn-gold {
@@ -68,10 +82,6 @@ h1, .text-gold {
 .btn-outline-gold:hover {
     border-color: var(--peach);
     color: var(--peach) !important;
-}
-
-.link-peach {
-    color: var(--peach);
 }
 
 /*GLOBAL*/
@@ -96,7 +106,7 @@ img:hover {
 
 /*NAVBAR*/
 .nav-link {
-    color: var(--peach)
+    font-size: 1rem !important;
 }
 
 .navbar {
@@ -154,7 +164,6 @@ h2 {
 }
 
 /*TYPED*/
-
 .typing-container {
     position: relative;
 }
@@ -221,17 +230,12 @@ ul.timeline > li > .branch-second-job {
     background: var(--somewhat-light-grey);
 }
 
-.timeline>li>p {
+.timeline > li > p {
     min-height: 1em;
 }
 
-.timeline-time {
-    background-color: var(--peach);
-    color: var(--black);
-}
-
-.timeline .timeline-event {
-    color: var(--gold);
+.timeline-event {
+    font-size: 1rem !important;
 }
 
 .timeline .connecting-line, svg {
