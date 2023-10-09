@@ -168,11 +168,8 @@ h2 {
     position: relative;
 }
 
-.typed-placeholder {
-    position: absolute;
-    visibility: hidden;
-    top: 0;
-    left: 0;
+.typed-multiline {
+    height: 2.5em;
 }
 
 .featurette {

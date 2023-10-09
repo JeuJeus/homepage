@@ -50,21 +50,8 @@ const syncAllImageCarousels = () => {
     });
 };
 
-const hackToSetDynamicHeightOfTypedHeadings = (s) => {
-    let typedHeadingDom = document.querySelector(`#typed-${s}-content`);
-    let typedHeading = document.querySelector(`#typed-${s}-heading`);
-    if (!typedHeadingDom || !typedHeading) return;
-
-    typedHeadingDom.style.display = 'block';
-    typedHeading.style.height = typedHeadingDom.getBoundingClientRect().height + 'px';
-    typedHeadingDom.style.display = 'hidden';
-};
-
 const initiateTyping = () => {
-    const toType = ['name', 'code', 'electronics', 'sports', 'music'];
-
-    // toType.forEach(s => hackToSetDynamicHeightOfTypedHeadings(s));
-    toType.forEach(s => {
+    ['name', 'code', 'electronics', 'sports', 'music'].forEach(s => {
         if (!document.querySelector(`#typed-${s}-strings`)) return;
         new Typed(`#typed-${s}`, {stringsElement: `#typed-${s}-strings`, typeSpeed: 60, loop: true})
     });
