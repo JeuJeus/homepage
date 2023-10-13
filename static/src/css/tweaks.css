@@ -1,8 +1,9 @@
 /*VARIABLES*/
 :root {
-    --pink: #F24B59;
-    --gold: #F2C46D;
-    --peach: #F29979;
+    --orange: #c7493a;
+    --green: #689775;
+    --peach: #c08f81;
+
     --black: #0D0D0D;
     --slightly-transparent-dark-grey: rgba(22, 22, 24, 0.8);
     --slightly-more-transparent-dark-grey: rgba(22, 22, 24, 0.7);
@@ -38,16 +39,16 @@ body {
 
 /*COLORS*/
 
-.text-pink {
-    color: var(--pink);
+.text-orange {
+    color: var(--orange);
 }
 
 .text-peach {
     color: var(--peach);
 }
 
-.text-gold {
-    color: var(--gold);
+.text-green {
+    color: var(--green);
 }
 
 .text-black {
@@ -62,22 +63,22 @@ body {
     filter: drop-shadow(0px 0px 10px var(--black));
 }
 
-.btn-gold {
-    color: var(--somewhat-lighter-grey);
-    background-color: var(--gold);
+.btn-green {
+    color: var(--slightly-more-transparent-dark-grey);
+    background-color: var(--green);
 }
 
-.btn-gold:hover {
-    color: var(--somewhat-lighter-grey);
+.btn-green:hover {
+    color: var(--slightly-more-transparent-dark-grey);
     background-color: var(--peach);
 }
 
-.btn-outline-gold {
-    border-color: var(--gold);
-    color: var(--gold);
+.btn-outline-green {
+    border-color: var(--green);
+    color: var(--green);
 }
 
-.btn-outline-gold:hover {
+.btn-outline-green:hover {
     border-color: var(--peach);
     color: var(--peach) !important;
 }
