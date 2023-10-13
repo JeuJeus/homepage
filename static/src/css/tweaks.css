@@ -5,6 +5,7 @@
     --peach: #c08f81;
 
     --black: #0D0D0D;
+
     --slightly-transparent-dark-grey: rgba(22, 22, 24, 0.8);
     --slightly-more-transparent-dark-grey: rgba(22, 22, 24, 0.7);
     --dark-grey: rgb(22, 22, 24);
@@ -174,7 +175,7 @@ h2 {
 
 #timeline > li > .bullet {
     content: ' ';
-    background: white;
+    background: var(--green);
     display: inline-block;
     position: absolute;
     border-radius: 50%;
@@ -216,7 +217,7 @@ h2 {
 #timeline .connecting-line, line {
     display: block;
     stroke-width: 3px;
-    stroke: rgb(255, 255, 255);
+    stroke: var(--green);
 }
 
 #timeline > li > .connecting-line > .line, .branch-study {
