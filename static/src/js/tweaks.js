@@ -101,12 +101,23 @@ const connectCVBulletPointsToTimelineTree = () => {
     connectedCVBulletPoints.forEach(tuple => connectTwoBulletPointsWithLine(timeline, tuple.from, tuple.to, tuple.color));
 }
 
+let fixedTimelineOnMobile = false;
+const hackToFixCvBulletsPositionOnMobile = () => {
+    //hack -> on mobile cv bullets are placed in wrong spot, probably due to lazy loading of dom elements, workaround atm - fix me
+    const observer = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting === true) connectCVBulletPointsToTimelineTree();
+    }, {threshold: [0.1]});
+    observer.observe(document.querySelector("#timeline"));
+};
+
 document.addEventListener("DOMContentLoaded", () => {
 
     initiateTyping();
     toggleNavbarTransparencyByScrollStatus();
     syncAllImageCarousels();
+
     connectCVBulletPointsToTimelineTree();
+    hackToFixCvBulletsPositionOnMobile();
 
     // set current active paragraph
     new bootstrap.ScrollSpy(document.body, {target: '#navbarNav'});
