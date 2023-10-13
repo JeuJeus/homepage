@@ -2,10 +2,8 @@
 :root {
     --pink: #F24B59;
     --gold: #F2C46D;
-    --orange: #F25C05;
     --peach: #F29979;
     --black: #0D0D0D;
-
     --slightly-transparent-dark-grey: rgba(22, 22, 24, 0.8);
     --slightly-more-transparent-dark-grey: rgba(22, 22, 24, 0.7);
     --dark-grey: rgb(22, 22, 24);
@@ -93,12 +91,8 @@ a:hover, a.text-light:hover {
 html {
     scroll-behavior: smooth;
     max-width: 100%;
-}
-
-html, body {
     height: 100%;
 }
-
 /*NAVBAR*/
 .navbar,.navbar-nav {
     transition: background-color 200ms linear;
@@ -130,6 +124,7 @@ html, body {
 
 /*BODY*/
 body {
+    height: 100%;
     background-image: url("../../img/background.svg");
     background-size: contain;
     background-color: var(--dark-grey) !important;
@@ -140,13 +135,9 @@ h2 {
     box-shadow: 0 0 4em 2em var(--dark-grey);
 }
 
+/*PASSION*/
 .lead {
     font-weight: 400;
-}
-
-/*TYPED*/
-.typing-container {
-    position: relative;
 }
 
 .typed-multiline {
@@ -168,19 +159,19 @@ h2 {
 }
 
 /*TIMELINE*/
-ul.timeline {
+#timeline {
     list-style-type: none;
     position: relative;
     background-color: var(--slightly-transparent-dark-grey);
     box-shadow: 0 0 5em 2em var(--dark-grey);
 }
 
-ul.timeline > li {
+#timeline > li {
     margin: 1.2em 0;
     padding-left: 6em;
 }
 
-ul.timeline > li > .bullet {
+#timeline > li > .bullet {
     content: ' ';
     background: white;
     display: inline-block;
@@ -193,30 +184,26 @@ ul.timeline > li > .bullet {
     z-index: 400;
 }
 
-ul.timeline > li > .branch-study {
+#timeline > li > .branch-study {
     left: 2em;
     background: var(--somewhat-more-lighter-grey);
 }
 
-ul.timeline > li > .branch-first-job {
+#timeline > li > .branch-first-job {
     left: 4em;
     background: var(--somewhat-lighter-grey);
 }
 
-ul.timeline > li > .branch-second-job {
+#timeline > li > .branch-second-job {
     left: 6em;
     background: var(--somewhat-light-grey);
 }
 
-.timeline > li > p {
+#timeline > li > p {
     min-height: 1em;
 }
 
-.timeline-event {
-    font-size: 1rem !important;
-}
-
-.timeline .connecting-line, svg {
+#timeline .connecting-line {
     display: block;
     position: absolute;
     top: 0;
@@ -225,21 +212,21 @@ ul.timeline > li > .branch-second-job {
     height: 100%;
 }
 
-.timeline .connecting-line, svg .line, line {
+#timeline .connecting-line, line {
     display: block;
     stroke-width: 3px;
     stroke: rgb(255, 255, 255);
 }
 
-.timeline > li > .connecting-line > .line, .branch-study {
+#timeline > li > .connecting-line > .line, .branch-study {
     stroke: var(--somewhat-more-lighter-grey) !important;
 }
 
-.timeline > li > .connecting-line > .line, .branch-first-job {
+#timeline > li > .connecting-line > .line, .branch-first-job {
     stroke: var(--somewhat-lighter-grey) !important;
 }
 
-.timeline > li > .connecting-line > .line, .branch-second-job {
+#timeline > li > .connecting-line > .line, .branch-second-job {
     stroke: var(--somewhat-light-grey) !important;
 }
 
