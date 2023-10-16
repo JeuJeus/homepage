@@ -55,8 +55,20 @@ body {
     color: var(--black);
 }
 
+.text-light-grey {
+    color:  var(--somewhat-more-lighter-grey);
+}
+
 .background-peach {
     background-color: var(--peach);
+}
+
+.background-somewhat-light-grey {
+    background-color: var(--somewhat-light-grey);
+}
+
+.background-black {
+    background-color: var(--black);
 }
 
 .text-black-shadow {
