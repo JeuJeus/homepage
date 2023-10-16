@@ -51,7 +51,7 @@ const syncAllImageCarousels = () => {
 };
 
 const initiateTyping = () => {
-    ['name', 'code', 'electronics', 'sports', 'music'].forEach(s => {
+    ['name', 'blog', 'code', 'electronics', 'sports', 'music'].forEach(s => {
         if (!document.querySelector(`#typed-${s}-strings`)) return;
         new Typed(`#typed-${s}`, {stringsElement: `#typed-${s}-strings`, typeSpeed: 60, loop: true})
     });
