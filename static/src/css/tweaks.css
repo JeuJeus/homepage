@@ -107,6 +107,14 @@ html {
     height: 100%;
 }
 
+img {
+    filter: saturate(10%);
+}
+
+img:hover {
+    filter: unset;
+}
+
 /*NAVBAR*/
 .navbar, .navbar-nav {
     transition: background-color 200ms linear;
