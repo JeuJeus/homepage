@@ -71,7 +71,8 @@ const connectedCVBulletPoints = [
     {from: 'timeline-bullet-before-dozent', to: 'timeline-bullet-currently'},
     {from: 'timeline-bullet-wismar', to: 'timeline-bullet-master', color: 'branch-study'},
     {from: 'timeline-bullet-master', to: 'timeline-bullet-after-master', color: 'branch-study'},
-    {from: 'timeline-bullet-kb', to: 'timeline-bullet-first-job-currently', color: 'branch-first-job'},
+    {from: 'timeline-bullet-kb', to: 'timeline-bullet-kb-ciso', color: 'branch-first-job'},
+    {from: 'timeline-bullet-kb-ciso', to: 'timeline-bullet-first-job-currently', color: 'branch-first-job'},
     {from: 'timeline-bullet-before-dozent', to: 'timeline-bullet-fhdw-dozent', color: 'branch-second-job'},
     {from: 'timeline-bullet-fhdw-dozent', to: 'timeline-bullet-after-dozent', color: 'branch-second-job'},
 ];
