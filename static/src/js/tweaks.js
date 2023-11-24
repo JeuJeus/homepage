@@ -68,13 +68,15 @@ const connectedCVBulletPoints = [
     {from: 'timeline-bullet-bachelor', to: 'timeline-bullet-after-bachelor', color: 'branch-study'},
     {from: 'timeline-bullet-after-bachelor', to: 'timeline-bullet-wismar', color: 'branch-study'},
     {from: 'timeline-bullet-after-bachelor', to: 'timeline-bullet-before-dozent'},
-    {from: 'timeline-bullet-before-dozent', to: 'timeline-bullet-currently'},
-    {from: 'timeline-bullet-wismar', to: 'timeline-bullet-master', color: 'branch-study'},
-    {from: 'timeline-bullet-master', to: 'timeline-bullet-after-master', color: 'branch-study'},
-    {from: 'timeline-bullet-kb', to: 'timeline-bullet-kb-ciso', color: 'branch-first-job'},
-    {from: 'timeline-bullet-kb-ciso', to: 'timeline-bullet-first-job-currently', color: 'branch-first-job'},
+    {from: 'timeline-bullet-before-dozent', to: 'timeline-bullet-after-dozent'},
     {from: 'timeline-bullet-before-dozent', to: 'timeline-bullet-fhdw-dozent', color: 'branch-second-job'},
     {from: 'timeline-bullet-fhdw-dozent', to: 'timeline-bullet-after-dozent', color: 'branch-second-job'},
+    {from: 'timeline-bullet-after-dozent', to: 'timeline-bullet-after-master'},
+    {from: 'timeline-bullet-wismar', to: 'timeline-bullet-master', color: 'branch-study'},
+    {from: 'timeline-bullet-master', to: 'timeline-bullet-after-master', color: 'branch-study'},
+    {from: 'timeline-bullet-after-master', to: 'timeline-bullet-currently'},
+    {from: 'timeline-bullet-kb', to: 'timeline-bullet-kb-ciso', color: 'branch-first-job'},
+    {from: 'timeline-bullet-kb-ciso', to: 'timeline-bullet-first-job-currently', color: 'branch-first-job'},
 ];
 
 const connectTwoBulletPointsWithLine = (timeline, startPoint, endPoint, color) => {
