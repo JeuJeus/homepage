@@ -58,10 +58,8 @@ const initiateTyping = () => {
 }
 
 const connectedCVBulletPoints = [
-    {from: 'timeline-bullet-before-abitur', to: 'timeline-bullet-abitur'},
-    {from: 'timeline-bullet-abitur', to: 'timeline-bullet-fsj'},
-    {from: 'timeline-bullet-fsj', to: 'timeline-bullet-after-bachelor'},
-    {from: 'timeline-bullet-fsj', to: 'timeline-bullet-uni-lpz', color: 'branch-study'},
+    {from: 'timeline-bullet-life', to: 'timeline-bullet-after-bachelor'},
+    {from: 'timeline-bullet-life', to: 'timeline-bullet-uni-lpz', color: 'branch-study'},
     {from: 'timeline-bullet-uni-lpz', to: 'timeline-bullet-fhdw', color: 'branch-study'},
     {from: 'timeline-bullet-fhdw', to: 'timeline-bullet-kb', color: 'branch-first-job'},
     {from: 'timeline-bullet-fhdw', to: 'timeline-bullet-bachelor', color: 'branch-study'},
@@ -76,7 +74,11 @@ const connectedCVBulletPoints = [
     {from: 'timeline-bullet-master', to: 'timeline-bullet-after-master', color: 'branch-study'},
     {from: 'timeline-bullet-after-master', to: 'timeline-bullet-currently'},
     {from: 'timeline-bullet-kb', to: 'timeline-bullet-kb-ciso', color: 'branch-first-job'},
-    {from: 'timeline-bullet-kb-ciso', to: 'timeline-bullet-first-job-currently', color: 'branch-first-job'},
+    {from: 'timeline-bullet-kb-ciso', to: 'timeline-bullet-after-ciso', color: 'branch-first-job'},
+    {from: 'timeline-bullet-after-ciso', to: 'timeline-bullet-doctoral-student', color: 'branch-study'},
+    {from: 'timeline-bullet-doctoral-student', to: 'timeline-bullet-study-currently', color: 'branch-study'},
+    {from: 'timeline-bullet-after-ciso', to: 'timeline-bullet-mbti', color: 'branch-first-job'},
+    {from: 'timeline-bullet-mbti', to: 'timeline-bullet-first-job-currently', color: 'branch-first-job'}
 ];
 
 const connectTwoBulletPointsWithLine = (timeline, startPoint, endPoint, color) => {
