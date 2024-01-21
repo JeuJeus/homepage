@@ -58,8 +58,10 @@ const initiateTyping = () => {
 }
 
 const connectedCVBulletPoints = [
-    {from: 'timeline-bullet-life', to: 'timeline-bullet-after-bachelor'},
-    {from: 'timeline-bullet-life', to: 'timeline-bullet-uni-lpz', color: 'branch-study'},
+    {from: 'timeline-bullet-before-abitur', to: 'timeline-bullet-abitur'},
+    {from: 'timeline-bullet-abitur', to: 'timeline-bullet-fsj'},
+    {from: 'timeline-bullet-fsj', to: 'timeline-bullet-after-bachelor'},
+    {from: 'timeline-bullet-fsj', to: 'timeline-bullet-uni-lpz', color: 'branch-study'},
     {from: 'timeline-bullet-uni-lpz', to: 'timeline-bullet-fhdw', color: 'branch-study'},
     {from: 'timeline-bullet-fhdw', to: 'timeline-bullet-kb', color: 'branch-first-job'},
     {from: 'timeline-bullet-fhdw', to: 'timeline-bullet-bachelor', color: 'branch-study'},
