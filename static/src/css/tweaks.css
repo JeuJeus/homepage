@@ -56,7 +56,7 @@ body {
 }
 
 .text-light-grey {
-    color:  var(--somewhat-more-lighter-grey);
+    color: var(--somewhat-more-lighter-grey);
 }
 
 .background-peach {
@@ -264,3 +264,13 @@ footer {
     box-shadow: 0 0 4em 1em var(--dark-grey);
 }
 
+/* RESEARCH */
+.research-thumbnail {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.research-thumbnail-wrapper {
+    min-height: 250px;
+}
